@@ -38,4 +38,4 @@ services:
         data:
                 image: busybox:1
                 volumes:
-                   - ./mysql/data:/var/lib/mysql
+                   - ../../piccean_db/mysql/data:/var/lib/mysql
