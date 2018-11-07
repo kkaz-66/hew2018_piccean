@@ -7,7 +7,6 @@ function test(){
   $sql="SELECT * FROM test WHERE test=1";
   $result=mysqli_query($con,$sql);
   $row=mysqli_fetch_array($result);
-  //a
   return $row;
 }
 ?>
