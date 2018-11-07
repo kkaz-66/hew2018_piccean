@@ -9,5 +9,4 @@ function test(){
   $row=mysqli_fetch_array($result);
   return $row;
 }
-// hoge
 ?>
