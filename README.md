@@ -5,7 +5,9 @@
 
 起動   
 
-    docker-compose up -d ？？？？？？？？
+    docker-compose up -d
+or
+    docker-compose up
 
 //起動後に localhost:？？？ でアクセスできるはず
 
@@ -38,6 +40,7 @@ workspaceに入るには
 * git add
 * git commit  
 * git push
+* git reset --soft HEAD^
 
 #### git clone  
 ブランチを指定して、リポジトリをローカルに持ってきたい時
@@ -59,6 +62,11 @@ workspaceに入るには
 ローカルでの開発内容を共有リポジトリに反映させる。
 
     git push  origin 宛先ブランチ名
+    
+#### git reset --soft HEAD^
+commitをなかったことにする。
+
+    git reset --soft HEAD^
 
 
 ### Gitコミットメッセージ
