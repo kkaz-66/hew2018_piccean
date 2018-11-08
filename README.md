@@ -40,7 +40,7 @@ workspaceに入るには
   docker exec -it  laradock_workspace_1 /bin/bash
 
 ***
-# Git基本コマンド
+# よく使うGitコマンド一覧
 * git clone
 * git add
 * git commit  
