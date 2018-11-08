@@ -23,10 +23,10 @@ or
 データベースに入るには laradockディレクトリに移動してから下のコマンドを実行
 
     docker-compose exec mysql bash
-    mysql -u ？？？ -p
+    mysql -u ？ -p
 
-    DBユーザー名  = ？？？
-    DBパスワード   = ？？？
+    DBユーザー名  = ？
+    DBパスワード   = ？
 
     exit        //終了するコマンド
 
@@ -45,7 +45,7 @@ workspaceに入るには
 #### git clone  
 ブランチを指定して、リポジトリをローカルに持ってきたい時
 
-    git clone -b ブランチ名 ？？？
+    git clone -b ブランチ名
 
 #### git add
 管理対象に追加（ステージングエリアに上げる）
