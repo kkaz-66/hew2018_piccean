@@ -3,30 +3,35 @@
 ### laradockディレクトリに移動してから下のコマンドを実行 
 
 
-起動   
+#### 起動   
+
+picceandockerディレクトリに移動してから下のコマンドを実行
 
     docker-compose up -d
+    
 or
+
     docker-compose up
 
-//起動後に localhost:？？？ でアクセスできるはず
+//起動後にブラウザ上で localhost:8082 でアクセスできるはず
 
-起動確認   //Upは起動中、Exitは停止中
+#### 起動確認
 
     docker-compose ps
+    
+//Upは起動中、Exitは停止中
 
-停止
+#### 停止
 
     docker-compose stop
 
 
-データベースに入るには laradockディレクトリに移動してから下のコマンドを実行
+データベースに入るには picceandockerディレクトリに移動してから下のコマンドを実行
 
-    docker-compose exec mysql bash
-    mysql -u ？ -p
-
-    DBユーザー名  = ？
-    DBパスワード   = ？
+    docker exec -it picceandocker_mysql_1 bash
+    mysql -u root -p 
+    
+    DBパスワード   = root
 
     exit        //終了するコマンド
 
