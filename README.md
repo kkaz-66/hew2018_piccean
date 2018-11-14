@@ -46,6 +46,8 @@ workspaceに入るには
 * git commit  
 * git push
 * git reset --soft HEAD^
+* git branch [ブランチの名前]
+* git checkout 
 
 #### git clone  
 ブランチを指定して、リポジトリをローカルに持ってきたい時
@@ -73,6 +75,12 @@ commitをなかったことにする。
 
     git reset --soft HEAD^
 
+####git branch [ブランチの名前]
+branchを作成する。
+注意点:現時点のブランチから派生するので、masterに移動してから使うこと。
+
+#### git checkout [ブランチの名前]
+branchの移動。
 
 ### Gitコミットメッセージ
 
