@@ -9,7 +9,7 @@
 </head>
 <body>
 <!-- readHeader -->
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/view/header.php"); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/view/headerView.php"); ?>
 
 	<div class="content">
 	<!-- ここにコンテンツを記述 -->
@@ -18,6 +18,6 @@
 	</div>
 
 <!-- readFooter -->
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/view/footer.php"); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/view/footerView.php"); ?>
 </body>
 </html>
