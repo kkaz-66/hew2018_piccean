@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import url("./reset.css");
+
+/* フォント設定 */
+* {
+	color: #333;
+	font-size: 1em;
+	font-family: "游ゴシック","Yu Gothic","ヒラギノ角ゴ Pro W3",
+				 "Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"MS Pゴシック",sans-serif;
+	letter-spacing: 0.4px;
+}
+
+/* 全体設定 */
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.content {
+	padding-top: 50px;
+	flex: 1;
+}
+
+
+/* ヘッダーコンテンツ */
+header {
+	display: flex;
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+#headNavi {
+	min-width: 200px;
+	background: yellow;
+	line-height: 50px;
+	text-align: center;
+}
+.logoImage {
+	min-width: 150px;
+	height: 50px;
+	background: red;
+}
+.searchBox {
+	text-align: center;
+	background: blue;
+	min-width: 500px;
+	line-height: 50px;
+
+}
+#search {
+	min-width: 100px;
+}
+
+/* フッターコンテンツ */
+footer {
+	/* position: absolute;
+	bottom: 0; */
+	padding: 10px;
+	width: calc(100% - 20px);
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+}
+#footerNavi {
+	margin: 0 auto;
+	width: 500px;
+}
+
+/**********トップページ**********/
+#topWrapper {
+	height: 100%;
+	width: 100%;
+	background: #000;
+	background-position: center;
+	background-size: cover;
+	background-image: url("../images/topImage1.jpg");
+}
