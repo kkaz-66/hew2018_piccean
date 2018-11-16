@@ -26,5 +26,13 @@ body {
 
 /*ガイドライン書くところのボックス。中央寄せするやつ*/
 .guidelinebox{
-    
+    margin: auto;
+    background-color: aquamarine;   
+    width: 50%; 
+}
+h1,h2{
+    font-size: 32px;
+}
+hr{
+    color: #333;
 }

@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Piccean</title>
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/guidelineView.css">
 </head>
 <body>
 <!-- readHeader -->
@@ -13,10 +14,11 @@
 
 	<div class="content">
 	<!-- ここにコンテンツを記述 -->
-	<h1>利用規約</h1>
-	<h2>***について</h2>
-	<h2>***</h2>
+		<div class="guidelinebox">
+		<h1>利用規約</h1>
+		<hr>
 	<!-- コンテンツここまで -->
+		</div>
 	</div>
 
 <!-- readFooter -->
