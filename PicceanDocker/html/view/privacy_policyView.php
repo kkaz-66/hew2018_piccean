@@ -16,6 +16,11 @@
   <h1>プライバシーポリシー</h1>
     <h2>個人情報について</h2>
     <p>hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge</p>
+		<p>hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge</p>
+		<p>hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge</p>
+		<p>hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge</p>
+		<p>hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge</p>
+		<p>hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge</p>
     <ul>
       <li>その１</li>
       <li>その２</li>
