@@ -1,0 +1,12 @@
+body{
+  width:100%;
+}
+
+.main{
+  margin: 0 auto;
+  width:80%;
+}
+
+h1{
+  text-decoration: underline;
+}
