@@ -1,0 +1,20 @@
+body{
+  width:100%;
+}
+
+.regestMessage{
+  margin: 0 auto;
+  margin: auto;
+  margin-top: 50px;
+  width:50%;
+  /*background-color: antiquewhite;
+  */
+}
+
+.p1{
+  border-bottom: solid 1px;
+}
+
+p{
+  text-align: center;
+}
