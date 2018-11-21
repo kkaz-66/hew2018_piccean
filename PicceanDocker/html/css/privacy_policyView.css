@@ -1,0 +1,25 @@
+body{
+  width:100%;
+}
+
+.main{
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width:80%;
+  /*background-color: antiquewhite;*/
+}
+
+.main2{
+  margin: 0 auto;
+  margin-left: 150px;
+  width:650px;
+  /*background-color: seashell;
+  */
+}
+
+h1{
+  width : 650px;
+  border-bottom: solid 2px;
+  /*background-color: bisque;*/
+}
