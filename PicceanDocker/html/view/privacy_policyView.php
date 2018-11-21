@@ -6,6 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Piccean</title>
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/privacy_policyView.css">
 </head>
 <body>
 <!-- readHeader -->
@@ -13,14 +15,51 @@
 
 	<div class="content">
 	<!-- ここにコンテンツを記述 -->
-  <h1>プライバシーポリシー</h1>
-    <h2>個人情報について</h2>
-    <p>hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge</p>
-    <ul>
-      <li>その１</li>
-      <li>その２</li>
-      <li>その３</li>
-    </ul>
+		<div class="main">
+			<div class="main2">
+			<h1>プライバシーポリシー</h1>
+				<h2>個人情報保護</h2>
+					<p>
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+					</p>
+				<h2>個人情報の取り扱い</h2>
+					<p>
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+					</p>
+				<h2>個人情報の利用目的</h2>
+					<p>
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+					</p>
+				<h2>個人情報の第三者への提供</h2>
+					<p>
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+					</p>
+				<h2>改訂</h2>
+					<p>
+						当社は、本「個人情報の取り扱いについて」の全部または一部を改定することがあります。
+					</p>
+			</div>
+		</div>
 	<!-- コンテンツここまで -->
 	</div>
 
