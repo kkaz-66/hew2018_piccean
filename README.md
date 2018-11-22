@@ -35,6 +35,8 @@ picceandockerディレクトリに移動してから下のコマンドを実行
 
     exit        //終了するコマンド
 
+#### phpMyAdmin
+ブラウザ上でlocalhost:8083
 
 
 ***
