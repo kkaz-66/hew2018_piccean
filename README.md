@@ -35,9 +35,7 @@ picceandockerディレクトリに移動してから下のコマンドを実行
 
     exit        //終了するコマンド
 
-workspaceに入るには
 
-  docker exec -it  laradock_workspace_1 /bin/bash
 
 ***
 # よく使うGitコマンド一覧
