@@ -7,7 +7,7 @@
 	<title>Piccean</title>
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/reset.css">
-	<link rel="stylesheet" href="../css/member_regist_input_compView.css">
+	<link rel="stylesheet" href="../css/contact_compView.css">
 </head>
 <body>
 <!-- readHeader -->
