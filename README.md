@@ -1,4 +1,4 @@
-## よく使うdockerコマンド一覧
+# よく使うdockerコマンド一覧
 
 ### picceandockerディレクトリに移動してから下のコマンドを実行 
 
@@ -25,8 +25,8 @@ or
 
     docker-compose stop
 
-
-データベースに入るには picceandockerディレクトリに移動してから下のコマンドを実行
+#### データベース
+picceandockerディレクトリに移動してから下のコマンドを実行
 
     docker exec -it picceandocker_mysql_1 bash
     mysql -u root -p 
@@ -35,9 +35,9 @@ or
 
     exit        //終了するコマンド
 
-workspaceに入るには
+#### phpMyAdmin
+ブラウザ上でlocalhost:8083
 
-  docker exec -it  laradock_workspace_1 /bin/bash
 
 ***
 # よく使うGitコマンド一覧

@@ -17,8 +17,8 @@
 	<!-- ここにコンテンツを記述 -->
 		<div class="main">
 			<div class="main2">
-			<h1>プライバシーポリシー</h1>
-				<h2>個人情報保護</h2>
+			<h1>利用規約</h1>
+				<h2>第一条</h2>
 					<p>
 						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
 						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
@@ -27,7 +27,7 @@
 						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
 						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
 					</p>
-				<h2>個人情報の取り扱い</h2>
+				<h2>第二条</h2>
 					<p>
 						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
 						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
@@ -36,7 +36,7 @@
 						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
 						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
 					</p>
-				<h2>個人情報の利用目的</h2>
+				<h2>第三条</h2>
 					<p>
 						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
 						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
@@ -45,7 +45,7 @@
 						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
 						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
 					</p>
-				<h2>個人情報の第三者への提供</h2>
+				<h2>第四条</h2>
 					<p>
 						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
 						hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
