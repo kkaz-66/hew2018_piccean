@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--5秒後自動遷移-->
 	<meta http-equiv="refresh"content="5; url=../../index.php">
 	<title>Piccean</title>
 	<link rel="stylesheet" href="../css/style.css">
