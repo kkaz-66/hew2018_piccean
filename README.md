@@ -25,8 +25,8 @@ or
 
     docker-compose stop
 
-
-データベースに入るには picceandockerディレクトリに移動してから下のコマンドを実行
+#### データベース
+picceandockerディレクトリに移動してから下のコマンドを実行
 
     docker exec -it picceandocker_mysql_1 bash
     mysql -u root -p 
