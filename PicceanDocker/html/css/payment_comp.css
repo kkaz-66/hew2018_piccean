@@ -1,0 +1,43 @@
+body{
+  width:100%;
+}
+
+.regestMessage{
+  margin: 0 auto;
+  margin: auto;
+  margin-top: 50px;
+  width:50%;
+  /*background-color: antiquewhite*/
+
+}
+
+.p1{
+  margin: 8vh 8vw;
+  border-bottom: solid 1px;
+  font-size: 64px;
+}
+
+p{
+  text-align: center;
+}
+.ButtonBox{
+  width: 536px;
+  height: 64px;
+  margin:40vh auto;
+  /*background-color: aqua;*/
+}
+.button{
+  width: 256px;
+  height: 64px;
+  border:solid 1px;
+  border-color: black;
+  background-color: darkgray;
+  text-align: center; 
+  float: left;
+}
+.br{
+  margin-left: 10px; 
+}
+.bl{
+  margin-right: 10px;
+}
