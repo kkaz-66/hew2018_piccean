@@ -1,7 +1,7 @@
-#picceanフォルダ構成
+# picceanフォルダ構成
+'
 .
-├── phpmyadmin  ←新しくフォルダ作ってください。git管理下にあったphp myadminのsessionファイルを退避させました。11/24
-│   └── sessions
+├── phpmyadmin  ←新しくフォルダ作ってください。git管理下にあったphp myadminのsessionファイルを退避させました。11/24│   └── sessions
 ├── piccean ←ここ以下がgitで管理する部分
 │   └── PicceanDocker
 │       ├── dockerfile_apache
@@ -14,6 +14,7 @@
 │           └── view
 ├── piccean_db
 └── piccean_images
+'
 
 # よく使うdockerコマンド一覧
 
