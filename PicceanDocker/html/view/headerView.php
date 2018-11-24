@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <header>
-	<div class="logoImage"><img src="#" alt="Picceanのロゴ画像"></div>
+	<div class="logoImage"><a href="../index.php"><img src="#" alt="Picceanのロゴ画像"></a></div>
 	<div class="searchBox">
 		<form action="../controller/search_results.php" method="get">
 			<label for="search">
@@ -12,8 +12,8 @@
 	<div id="headNavi">
 		<?php if(!isset($_SESSION["id"])): ?>
 			<!-- 未ログイン時 -->
-			<button id="loginButton" onclick="location.href='../controller/login.php'">ログイン</button>
-			<button id="registButton" onclick="location.href='../controller/member_regist_input.php'">新規登録</button>
+			<button id="loginButton" onclick="location.href='../view/loginView.php'">ログイン</button>
+			<button id="registButton" onclick="location.href='../controller/member_regist_inputController.php'">新規登録</button>
 		<?php else: ?>
 			<!-- ログイン時 -->
 			<button id="logoutButton" onclick="location.href='../model/logout.php'">ログアウト</button>
