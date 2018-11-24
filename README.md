@@ -1,21 +1,10 @@
 # picceanフォルダ構成
-'
-.
-├── phpmyadmin  ←新しくフォルダ作ってください。git管理下にあったphp myadminのsessionファイルを退避させました。11/24│   └── sessions
-├── piccean ←ここ以下がgitで管理する部分
-│   └── PicceanDocker
-│       ├── dockerfile_apache
-│       ├── dockerfile_httpd
-│       ├── dockerfile_mysql
-│       └── html
-│           ├── controller
-│           ├── css
-│           ├── model
-│           └── view
-├── piccean_db
-└── piccean_images
-'
 
+.  
+├── phpmyadmin//新しくフォルダ作ってください。git管理下にあったphp myadminのsessionファイルを退避させました。11/24  
+├── piccean//ここ以下がgitで管理している部分  
+├── piccean_db//データベース  
+└── piccean_images//画像入れるとこ
 # よく使うdockerコマンド一覧
 
 ### picceandockerディレクトリに移動してから下のコマンドを実行 
