@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("../model/db_Model.php");
+require_once("../model/db_model.php");
 
 $user_name = $_POST["user_name"];
 $user_nickname = $_POST["user_nickname"];
