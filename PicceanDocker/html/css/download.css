@@ -1,0 +1,33 @@
+.content{
+}
+.infoBox{
+    width: 80vw;
+    height: 80vh;
+    /*background-color: crimson;*/
+    margin: auto;
+    padding: 20px;
+}
+.leftBox{
+    width: 20vw;
+    height: 80vh;
+    background-color: aqua;
+    float: left;
+}
+.centerBox{
+    width: 40vw;
+    height: 80vh;
+    background-color: blue;
+    float: left;
+}
+.rightBox{
+    width: 20vw;
+    height: 80vh;
+    background-color: blueviolet;
+    float: left;
+}
+.image{
+    margin: auto;
+    width: 18vw;
+    height: 10vw;
+    background-color: coral;
+}
