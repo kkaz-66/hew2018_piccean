@@ -5,7 +5,8 @@
     height: 80vh;
     /*background-color: crimson;*/
     margin: auto;
-    padding: 20px;
+    border: solid 1px;
+    border-color: black;
 }
 .leftBox{
     width: 20vw;
