@@ -31,7 +31,7 @@ services:
                 ports:
                    - "8083:80"
                 volumes:
-                   - "./phpmyadmin/sessions:/sessions"
+                   - "../../phpmyadmin/sessions:/sessions"
 
         httpd:
                 build: ./dockerfile_httpd
