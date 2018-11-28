@@ -17,12 +17,32 @@
 	<!-- ここにコンテンツを記述 -->
 		<div class="infoBox">
 			<div class="leftBox">
-				<div class="image"></div>
+				<div class="image">PICTURE</div>
 				<div class="exif"></div>
 			</div>
 			<div class="centerBox">
+				<div class="title"></div>
+				<div class="item_name">
+					<p class="item_name_txt">投稿者:</p>
+					<p class="item_name_txt">カテゴリ:</p>
+					<p class="item_name_txt">タグ:</p>
+					<p class="item_name_txt">利用ダイビングショップ名:</p>
+					<p class="item_name_txt">ダイビングポイント名:</p>
+					<p class="item_name_txt">撮影機材:</p>
+					<p class="item_name_txt">コメント:</p>
+				</div>
+				<div class="item_get">
+					<!-- ここにgetした情報 -->
+				</div>
 			</div>
-			<div class="rightBox"></div>
+			<div class="rightBox">
+				<div class="picsize">
+					<!-- サイズがどうとか -->
+				</div>
+				<div class="dlbutton">
+					<p>ダウンロード</p>
+				</div>
+			</div>
 		</div>
 	<!-- コンテンツここまで -->
 	</div>
