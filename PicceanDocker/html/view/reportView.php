@@ -20,11 +20,11 @@
 		<h1>違反報告</h1>
     <div class="LeftBox">
       <div class="img">
-      <img src="" alt="違反報告画像">
+        <img src="" alt="違反報告画像">
       </div>
       <div class="status">
-      <p>画像タイトル</p>
-      <p>会員ID:</p>
+        <p>画像タイトル</p>
+        <p>会員ID:</p>
       </div>
     </div>
     <div class="RightBox">
