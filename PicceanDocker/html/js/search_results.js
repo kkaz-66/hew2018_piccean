@@ -20,7 +20,7 @@ $(function() {
 	});
 
 	// カテゴリ変更
-	$('.addCategory').on('click', function () {
+	$('#categoryId').change(function () {
 		var params = getParameter();
 		var element = document.getElementById('categoryId');
 		var e = element.value;
@@ -53,7 +53,7 @@ $(function() {
 	});
 
 	// 並び順変更
-	$('.addSort').on('click', function () {
+	$('#imageSort').change(function () {
 		var params = getParameter();
 		var element = document.getElementById('imageSort');
 		var e = element.value;
@@ -67,7 +67,7 @@ $(function() {
 	});
 
 	// 表示件数変更
-	$('.addDispNum').on('click', function () {
+	$('#dispNum').change(function () {
 		var params = getParameter();
 		var element = document.getElementById('dispNum');
 		var e = element.value;
