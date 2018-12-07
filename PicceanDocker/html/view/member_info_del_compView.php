@@ -22,7 +22,7 @@
 		<div class="message">
       <p class="p1">退会完了</p>
       <p>ご利用ありがとうございました。</p>
-      <div class="position"><input type="submit" value="トップへ戻る" class="button"></div>
+      <div class="position"><input type="button" value="トップへ戻る" class="button" onClick="location.href='../index.php'"></div>
 		</div>
 	<!-- コンテンツここまで -->
 	</div>
