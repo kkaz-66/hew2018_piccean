@@ -18,8 +18,24 @@
 	<div class="content">
 	<!-- ここにコンテンツを記述 -->
 		<h1>違反報告</h1>
-    <div class="LeftBox"></div>
-    <div class="RightBox"></div>
+    <div class="LeftBox">
+      <div class="img">
+      <img src="" alt="違反報告画像">
+      </div>
+      <div class="status">
+      <p>画像タイトル</p>
+      <p>会員ID:</p>
+      </div>
+    </div>
+    <div class="RightBox">
+      違反理由の詳細：<br>
+      <form action="">
+        <input type="radio" name="report" value="" id="1"><label for="1">不適切なコンテンツである</label><br>
+        <input type="radio" name="report" value="" id="2"><label for="2">著作権・肖像権を侵害している</label><br>
+        <input type="radio" name="report" value="" id="3"><label for="3">その他</label><br>
+        <textarea name="reportText" value="" cols=40 rows=10 placeholder="違反報告内容を詳しくご記入ください"></textarea>
+      </form>
+    </div>
     <div class="buttonBox">
       <div class="buttonCenter">
         <form action="">
