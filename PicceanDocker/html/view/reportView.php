@@ -23,7 +23,7 @@
         <img src="" alt="違反報告画像">
       </div>
       <div class="status">
-        <p>画像タイトル</p>
+        <p>画像タイトル:</p>
         <p>会員ID:</p>
       </div>
     </div>
