@@ -2,10 +2,11 @@
 <header>
 	<div class="logoImage"><a href="../index.php"><img src="#" alt="Picceanのロゴ画像"></a></div>
 	<div class="searchBox">
-		<form action="../controller/search_results.php" method="get">
+		<form action="../controller/search_resultsController.php?page=1" method="get">
 			<label for="search">
-				<input type="text" id="search" maxlength="255" placeholder="検索キーワードを入力してください">
+				<input type="text" name="keywords" id="search" maxlength="255" placeholder="検索キーワードを入力してください">
 			</label>
+			<input type="hidden" name="fromHeader">
 			<input type="submit" id="searchButton" value="検索">
 		</form>
 	</div>
