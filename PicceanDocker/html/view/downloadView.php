@@ -18,7 +18,7 @@
 		<div class="infoBox">
 			<div class="leftBox">
 				<div class="image">PICTURE</div>
-				<div class="exif"></div>
+				<div class="exif">exif情報ここにでるよ</div>
 			</div>
 			<div class="centerBox">
 				<div class="title"></div>
@@ -39,8 +39,11 @@
 				<div class="picsize">
 					<!-- サイズがどうとか -->
 				</div>
+				<div class="size">
+					<p>Mサイズ(一例)</p>
+				</div>
 				<div class="dlbutton">
-					<p>ダウンロード</p>
+					<p>ダウンロードボタン</p>
 				</div>
 			</div>
 		</div>
