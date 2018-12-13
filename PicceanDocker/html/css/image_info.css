@@ -1,0 +1,100 @@
+.content{
+    margin:20px
+}
+.infoBox{
+    width: 80vw;
+    height: 80vh;
+    /*background-color: crimson;*/
+    margin: auto;
+    border: solid 1px;
+    border-color:gray;
+}
+.leftBox{
+    padding: 1vh 1vw;
+    width: 18vw;
+    height: 78vh;
+    /*background-color: aqua;*/
+    float: left;
+}
+.centerBox{
+    width: 40vw;
+    height: 80vh;
+    background-color:red;
+    float: left;
+}
+.rightBox{
+    padding: 1vh 1vw;
+    width: 18vw;
+    height: 78vh;
+    /*background-color: aqua;*/
+    float: left;
+}
+.image{
+    border: solid 2px;
+    margin: 10vh  auto 1vh auto;
+    width: 18vw;
+    height: 12vw;
+    border-color: gray;
+    background-color: coral;
+}
+.exif{
+    width: 18vw;
+    height:32vh;
+    border: solid 2px;
+    border-color: gray;
+}
+.text{
+    width: 38vw;
+    height: 78vh;
+    margin: 1vh 1vw;
+    /*background-color: aqua;*/
+}
+.title{
+    width: 40vw;
+    height: 15vh;
+    /*background-color: blue;*/
+}
+.item_name{
+    width: 32vw;
+    height: 65vh;;
+    float:left;
+    background-color:blue;
+}
+.item_get{
+    width: 24vw;
+    height: 65vh;
+    float: left;
+    /*background-color:aquamarine;*/
+}
+.item_name_txt{
+    margin-left: 1vw;
+    margin-top:16px;
+    font-size: 16px;
+    text-align: left;
+    clear: left;
+}
+.category_box{
+    float: left;
+    background-color:aqua;
+}
+.tag_box{
+    float: left;
+    background-color: blueviolet;
+}
+.input_box{
+    margin-left: 1vw;
+}
+
+
+.size{
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.dlbutton{
+    margin:auto;
+    text-align: center;
+    width: 10vw;
+    height: 5vh;
+    background-color: aqua;
+}
