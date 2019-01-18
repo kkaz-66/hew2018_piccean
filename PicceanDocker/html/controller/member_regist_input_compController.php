@@ -2,6 +2,11 @@
 session_start();
 require_once("../model/db_model.php");
 
+if(isset($_SESSION["id"])){
+	header("Location: ../index.php");
+	exit;
+}
+
 $user_name = $_POST["user_name"];
 $user_nickname = $_POST["user_nickname"];
 $user_id = $_POST["user_id"];
