@@ -24,8 +24,10 @@
 				<div class="title"></div>
 				<div class="item_name">
 					<form action="post">
-						<p class="item_name_txt">タイトル</p>
-						<input type="text" class="input_box">
+						<div class="item_name_box">
+							<p class="item_name_txt">タイトル:</p>
+							<input type="text" class="input_box">
+						</div>
 						<div class="category_box">
 						<p class="item_name_txt">カテゴリ:</p>
 							<select name="category" id="0" class="input_box">
@@ -56,7 +58,7 @@
 					<p>Mサイズ(一例)</p>
 				</div>
 				<div class="dlbutton">
-					<p>ダウンロードボタン</p>
+					<p class = "dltxt">ダウンロードボタン</p>
 				</div>
 			</div>
 		</div>

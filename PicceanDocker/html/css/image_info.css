@@ -19,7 +19,7 @@
 .centerBox{
     width: 40vw;
     height: 80vh;
-    background-color:red;
+    /*background-color:red;*/
     float: left;
 }
 .rightBox{
@@ -41,7 +41,7 @@
     width: 18vw;
     height:32vh;
     border: solid 2px;
-    border-color: gray;
+    /*border-color: gray;*/
 }
 .text{
     width: 38vw;
@@ -52,13 +52,16 @@
 .title{
     width: 40vw;
     height: 15vh;
-    /*background-color: blue;*/
+    /*background-color: yellow;*/
+}
+.item_name_box{
+    /*background-color: brown;*/
 }
 .item_name{
     width: 32vw;
     height: 65vh;;
     float:left;
-    background-color:blue;
+    /*background-color:blue;*/
 }
 .item_get{
     width: 24vw;
@@ -75,11 +78,11 @@
 }
 .category_box{
     float: left;
-    background-color:aqua;
+    /*background-color:aqua;*/
 }
 .tag_box{
     float: left;
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
 }
 .input_box{
     margin-left: 1vw;
@@ -96,5 +99,11 @@
     text-align: center;
     width: 10vw;
     height: 5vh;
+    border-color: gray;
+    border: solid 2px;
     background-color: aqua;
+}
+
+.dltxt{
+    font-size: 4px;
 }
