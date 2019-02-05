@@ -17,6 +17,11 @@
 	<!-- ここにコンテンツを記述 -->
     <div class="infoBox">
 			<div class="leftBox">
+                <div class="file_select">
+                    <form action="post">
+                        <input type="button"value="ファイルを選択">
+                    </form> 
+                </div>
 				<div class="image">PICTURE</div>
 				<div class="exif">exif情報ここにでるよ</div>
 			</div>
