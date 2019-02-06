@@ -19,7 +19,7 @@
 			<div class="leftBox">
                 <div class="file_select">
                     <form action="post">
-                        <input type="button"value="ファイルを選択">
+                        <input type="file"value="ファイルを選択">
                     </form> 
                 </div>
 				<div class="image">PICTURE</div>
@@ -36,8 +36,8 @@
 						<div class="category_box">
 						<p class="item_name_txt">カテゴリ:</p>
 							<select name="category" id="0" class="input_box">
-								<option value="category1">カテゴリ1</option>>
-								<option value="category1">カテゴリ1</option>
+								<option value="category1">生物</option>>
+								<option value="category1">人間</option>
 							</select>
 						</div>
 						<div class="tag_box">
