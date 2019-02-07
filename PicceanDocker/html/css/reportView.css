@@ -1,0 +1,42 @@
+.content{
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  /*background-color: aqua;*/
+}
+
+.LeftBox{
+  /*background-color: antiquewhite;*/
+  width: 400px;
+  height:400px;
+  float:left;
+}
+
+.img{
+  background-color: blueviolet;
+  width: 400px;
+  height:300px;
+}
+
+.RightBox{
+  /*background-color: cornflowerblue;*/
+  width: 400px;
+  height:390px;
+  padding-top:10px;
+  padding-left: 10px;
+  float: left;
+}
+
+.buttonBox{
+  /*background-color: aquamarine;*/
+  width: 800px;
+  height:50px;
+  clear:left;
+}
+
+.buttonCenter{
+  text-align: center;
+  margin-top: 5px;
+}

@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+if(isset($_SESSION["id"])){
+	header("Location: ../index.php");
+	exit;
+}
+
 $_SESSION["user_name"] = $_POST["user_name"];
 $_SESSION["user_nickname"] = $_POST["user_nickname"];
 $_SESSION["user_id"] = $_POST["user_id"];

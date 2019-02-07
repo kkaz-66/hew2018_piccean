@@ -1,0 +1,45 @@
+body{
+  width:100%;
+}
+
+.message{
+  margin: 0 auto;
+  margin: auto;
+  margin-top: 50px;
+  width:50%;
+  /*background-color: antiquewhite;
+  */
+}
+
+.p1{
+  border-bottom: solid 1px;
+  font-weight: bold;
+}
+
+p{
+  text-align: center;
+}
+
+.position{
+  text-align: center;
+}
+
+.button {
+  margin-top: 5px;
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 12pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 9px 9px;   /* 余白       */
+  background    : #00aa90;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  opacity       : 0.9;         /* 透明度     */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 2px 2px 3px #666666;  /* 影の設定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  opacity       : 1;           /* カーソル時透明度 */
+}

@@ -2,10 +2,11 @@
 <header>
 	<div class="logoImage"><a href="../index.php"><img src="#" alt="Picceanのロゴ画像"></a></div>
 	<div class="searchBox">
-		<form action="../controller/search_results.php" method="get">
+		<form action="../controller/search_resultsController.php?page=1" method="get">
 			<label for="search">
-				<input type="text" id="search" maxlength="255" placeholder="検索キーワードを入力してください">
+				<input type="text" name="keywords" id="search" maxlength="255" placeholder="検索キーワードを入力してください">
 			</label>
+			<input type="hidden" name="fromHeader">
 			<input type="submit" id="searchButton" value="検索">
 		</form>
 	</div>
@@ -24,7 +25,7 @@
 				<dd class="menuItem"><a href="../controller/member_info_edit.php">会員情報ページ</a></dd>
 				<dd class="menuItem"><a href="../controller/image_add.php">画像追加ページ</a></dd>
 				<dd class="menuItem"><a href="../controller/member_image_list.php">アップロード画像一覧ページ</a></dd>
-				<dd class="menuItem"><a href="../controller/payment_image_list.php">購入画像一覧ページ</a></dd>
+				<dd class="menuItem"><a href="../controller/payment_image_listController.php">購入画像一覧ページ</a></dd>
 			</dl>
 		<?php endif; ?>
 	</div>

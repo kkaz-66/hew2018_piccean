@@ -19,7 +19,6 @@ function insert($user_name,$user_nickname,$user_id,$user_password,$user_email){
 	$stmt = mysqli_prepare($con, $sql);
 	mysqli_stmt_bind_param($stmt, 'sssss', $user_name, $user_nickname, $user_id, $password_hash, $user_email);
 	$result = mysqli_stmt_execute($stmt);
-	print mysqli_error($con);
 	mysqli_stmt_close($stmt);
 	db_close($con);
 	return $result;
