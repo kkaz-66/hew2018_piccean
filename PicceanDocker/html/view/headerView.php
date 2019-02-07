@@ -25,7 +25,7 @@
 				<dd class="menuItem"><a href="../controller/member_info_edit.php">会員情報ページ</a></dd>
 				<dd class="menuItem"><a href="../controller/image_add.php">画像追加ページ</a></dd>
 				<dd class="menuItem"><a href="../controller/member_image_list.php">アップロード画像一覧ページ</a></dd>
-				<dd class="menuItem"><a href="../controller/payment_image_list.php">購入画像一覧ページ</a></dd>
+				<dd class="menuItem"><a href="../controller/payment_image_listController.php">購入画像一覧ページ</a></dd>
 			</dl>
 		<?php endif; ?>
 	</div>
