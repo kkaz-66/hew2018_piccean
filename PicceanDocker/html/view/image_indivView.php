@@ -1,7 +1,10 @@
 <?php
-require_once("../model/image_get.php");
+require_once("../model/getter.php");
 $id = $_GET['imageId'];
-$url = getImage($id);
+$image = getImage($id);
+$category = getCategory($image["category_id"]);
+$shop = getShop($image["shop_id"]);
+$user_name = getUser($image["user_id"])
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -23,7 +26,7 @@ $url = getImage($id);
 		<div class="wrapper">
 			<div class="leftbox">
 				<div class="picture">
-				<img class="image_file" src="<?= $url ?>" alt="test">
+				<img class="image_file" src="<?= $image["image_file"] ?>" alt="test">
 				</div>
 				<div class="info_l">
 					<div class="tag">
@@ -31,15 +34,30 @@ $url = getImage($id);
 						<a href="" class="">タグ </a>
 						<a href="" class="">タグ </a>
 					</div>
-					<div class="comment">画像についてのコメント</div>
-					<div class="user">投稿者名  ID:XXX</div>
+					<div class="comment">
+						コメント
+						<?php echo $image["image_comment"]?>
+					</div>
+					<div class="user">
+						投稿者名
+						<?php echo $user_name?>
+					</div>
 				</div>
 			</div>
 			<div class="rightbox">
-				<div class="info_r">タイトル</div>
-				<div class="category">カテゴリ</div>
+				<div class="info_r">
+					タイトル:
+					<?php echo $image["image_title"] ?>
+				</div>
+				<div class="category">
+					カテゴリ:
+					<?php echo $category ?>
+				</div>
 				<div class="map">ここに地図</div>
-				<div class="shop">ショップ名</div>
+				<div class="shop">
+					ショップ名:
+					<?php echo $shop ?>
+				</div>
 				<div class="exif">
 					カメラ:
 					レンズ:

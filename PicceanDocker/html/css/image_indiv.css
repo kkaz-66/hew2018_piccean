@@ -5,13 +5,13 @@
 .leftbox{
     width: 50vw;
     height: 100vh;
-    background-color: aqua;
+    /*background-color: aqua;*/
     float: left;
 }
 .rightbox{
     width: 50vw;
     height:100vh;
-    background-color: red;
+    /*background-color: red;*/
     float: left;
 }
 .picture{
@@ -20,56 +20,56 @@
     margin: auto;
     margin-top: 8vh;
     text-align: center;
-    background-color: blue;
+    /*background-color: blue;*/
 }
 .info_l{
     width: 32vw;
     height: 40vh;
     margin:auto;
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
 
 }
 .tag{
     width: 32vw;
     height: 5vh;
-    background-color: coral;
+    /*background-color: coral;*/
 }
 .comment{
     width: 32vw;
     height: 16vh;
-    background-color :teal;
+    /*background-color :teal;*/
 }
 .user{
     width: 32vw;
     height: 10vh;
-    background-color: brown;
+    /*background-color: brown;*/
 }
 .info_r{
     margin-top: 8vh;
     width: 50vw;
     height: 5vh;
-    background-color: darkblue;
+    /*background-color: darkblue;*/
 }
 .category{
     width: 50vw;
     height: 5vh;
-    background-color: teal;
+    /*background-color: teal;*/
 }
 .map{
     margin:2vh auto;
     width: 36vw;
     height: 18vw;;
-    background-color: hotpink;
+    /*background-color: hotpink;*/
 }
 .shop{
     width: 50vw;
     height: 5vh;
-    background-color: chartreuse
+    /*background-color: chartreuse*/
 }
 .exif{
     width: 50vw;
     height: 20vh;
-    background-color: gold;
+    /*background-color: gold;*/
 }
 .image_file{
     width: 32vw;
