@@ -30,13 +30,13 @@
 		<br>
 		<label for="user_password">パスワード</label>
 		<input type="hidden" name="user_password" value="<?= $_POST["user_password"] ?>">
-		<?= $_POST["user_password"]; ?>
+		********
 		<br>
 		<label for="user_email">メールアドレス</label>
 		<input type="hidden" name="user_email" value="<?= $_POST["user_email"] ?>">
 		<?= $_POST["user_email"]; ?>
 		<br>
-		<input type="button" onclick="location.href='../controller/member_regist_inputController.php'" value="戻る">
+		<button type="submit" formaction="../controller/member_regist_inputController.php">戻る</button>
 		<input type="submit" name="submit" value="登録">
 	</form>
 
