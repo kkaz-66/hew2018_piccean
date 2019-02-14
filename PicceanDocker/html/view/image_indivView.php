@@ -1,3 +1,8 @@
+<?php
+require_once("../model/image_get.php");
+$id = $_GET['imageId'];
+$url = getImage($id);
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -17,8 +22,8 @@
 	<form action="" method="post">
 		<div class="wrapper">
 			<div class="leftbox">
-				<div class="picture">ここに画像が入るよ
-
+				<div class="picture">
+				<img class="image_file" src="<?= $url ?>" alt="test">
 				</div>
 				<div class="info_l">
 					<div class="tag">
