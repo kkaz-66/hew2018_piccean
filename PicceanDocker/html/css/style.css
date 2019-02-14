@@ -13,15 +13,31 @@
 /* 全体設定 */
 html {
 	height: 100%;
+	width: 100%;
 }
 body {
+	width: 100%;
+	height: 100px;
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 }
+
+#back{
+	background-image: url("../images/topImage03.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .content {
+	height: 100vh;
+	max-height: 100%;
 	padding-top: 50px;
 	flex: 1;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left;
 }
 
 
@@ -37,18 +53,57 @@ header {
 }
 #headNavi {
 	min-width: 200px;
-	background: yellow;
+	/*background: yellow;*/
 	line-height: 50px;
 	text-align: center;
+	border-bottom-left-radius: 10px;
 }
+
 .logoImage {
 	min-width: 150px;
 	height: 50px;
-	background: red;
+	/*background-image: url("../images/logo.jpg");*/
+	background-color: white;
+	background-size: cover;
+	border: solid 2px #67c5ff;
 }
+
+.logosrc {
+	text-align: center;
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+	padding: 0.1em 0.3em;
+	transition: all .3s;
+}
+.logosrc:hover {
+	color: #fff;
+	background-color: #00BCD4;
+}
+
+#loginButton{
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	color: #67c5ff;
+	border: solid 2px #67c5ff;
+	border-radius: 3px;
+	transition: .4s;
+}
+
+#registButton{
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	color: #67c5ff;
+	border: solid 2px #67c5ff;
+	border-radius: 3px;
+	transition: .4s;
+}
+
 .searchBox {
 	text-align: center;
-	background: blue;
+	/*background: blue;*/
 	min-width: 500px;
 	line-height: 50px;
 
@@ -57,13 +112,23 @@ header {
 	min-width: 100px;
 }
 
+#searchButton{
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	color: #67c5ff;
+	border: solid 2px #67c5ff;
+	border-radius: 3px;
+	transition: .4s;
+}
+
 /* フッターコンテンツ */
 footer {
-	/* position: absolute;
-	bottom: 0; */
+	position: fixed;
+	bottom: 0; 
 	padding: 10px;
 	width: calc(100% - 20px);
-	background: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.5);
 	text-align: center;
 }
 #footerNavi {

@@ -8,16 +8,18 @@
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<!-- readHeader -->
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/view/headerView.php"); ?>
+<div id="back">
+	<!-- readHeader -->
+	<?php require_once($_SERVER['DOCUMENT_ROOT']."/view/headerView.php"); ?>
 
-	<div class="content">
-	<!-- ここにコンテンツを記述 -->
-		
-	<!-- コンテンツここまで -->
-	</div>
+		<div class="content">
+		<!-- ここにコンテンツを記述 -->
+			
+		<!-- コンテンツここまで -->
+		</div>
 
-<!-- readFooter -->
+	<!-- readFooter -->
+</div>
 <?php require_once($_SERVER['DOCUMENT_ROOT']."/view/footerView.php"); ?>
 </body>
 </html>
