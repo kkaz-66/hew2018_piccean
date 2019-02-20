@@ -1,3 +1,11 @@
+<?php
+require_once("../model/getter.php");
+$id = $_GET['imageId'];
+$image = getImage($id);
+$category = getCategory($image["category_id"]);
+$shop = getShop($image["shop_id"]);
+$user_name = getUser($image["user_id"])
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -17,8 +25,12 @@
 	<!-- ここにコンテンツを記述 -->
 		<div class="infoBox">
 			<div class="leftBox">
-				<div class="image">PICTURE</div>
-				<div class="exif">exif情報ここにでるよ</div>
+				<div class="image">
+					<img class="image_file" src="<?= $image["image_file"] ?>" alt="test">
+				</div>
+				<div class="exif">
+					exif
+				</div>
 			</div>
 			<div class="centerBox">
 				<div class="title"></div>
@@ -32,7 +44,13 @@
 					<p class="item_name_txt">コメント:</p>
 				</div>
 				<div class="item_get">
-					<!-- ここにgetした情報 -->
+				<p class="item_get_txt"><?php echo $user_name?></p>
+				<p class="item_get_txt"><?php echo $category?></p>
+				<p class="item_get_txt">tag</p>
+				<p class="item_get_txt"><?php echo $shop?></p>
+				<p class="item_get_txt">????</p>
+				<p class="item_get_txt"><?php echo $image["image_equipments"]?></p>
+				<p class="item_get_txt"><?php echo $image["image_comment"]?></p>
 				</div>
 			</div>
 			<div class="rightBox">
@@ -40,10 +58,10 @@
 					<!-- サイズがどうとか -->
 				</div>
 				<div class="size">
-					<p>Mサイズ(一例)</p>
+					<p><?php echo $image["image_size"]?>サイズ</p>
 				</div>
 				<div class="dlbutton">
-					<p>ダウンロードボタン</p>
+					<input type="submit" value="ダウンロード">
 				</div>
 			</div>
 		</div>
