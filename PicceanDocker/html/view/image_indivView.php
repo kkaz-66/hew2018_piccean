@@ -55,6 +55,9 @@ $user_name = getUser($image["user_id"])
 					<?php echo $category ?>
 				</div>
 				<div class="map">ここに地図</div>
+				<div class="buy">
+					<input type="submit" class="submit_b"value="カートに入れる">
+				</div>
 				<div class="shop">
 					ショップ名:
 					<?php echo $shop ?>

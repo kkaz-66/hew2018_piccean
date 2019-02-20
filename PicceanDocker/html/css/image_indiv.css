@@ -61,6 +61,11 @@
     height: 18vw;;
     /*background-color: hotpink;*/
 }
+.buy{
+    /*background-color: rebeccapurple;*/
+    height: 10vh;
+    width: 50vw;
+}
 .shop{
     width: 50vw;
     height: 5vh;
