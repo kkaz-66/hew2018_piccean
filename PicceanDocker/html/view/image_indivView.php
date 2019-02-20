@@ -35,7 +35,8 @@ $user_name = getUser($image["user_id"])
 						<a href="" class="">タグ </a>
 					</div>
 					<div class="comment">
-						コメント
+						コメント:
+						<br>
 						<?php echo $image["image_comment"]?>
 					</div>
 					<div class="user">
@@ -54,18 +55,16 @@ $user_name = getUser($image["user_id"])
 					<?php echo $category ?>
 				</div>
 				<div class="map">ここに地図</div>
+				<div class="buy">
+					<input type="submit" class="submit_b"value="カートに入れる">
+				</div>
 				<div class="shop">
 					ショップ名:
 					<?php echo $shop ?>
 				</div>
 				<div class="exif">
-					カメラ:
-					レンズ:
-					焦点距離:
-					ISO感度:
-					絞り:
-					シャッタースピード:
-					その他利用機材:
+					使用機材:
+					<?php echo $image["image_equipments"]?>
 				</div>
 			</div>
 		</div>
