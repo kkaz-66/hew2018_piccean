@@ -24,7 +24,7 @@ body {
 }
 
 #back{
-	background-image: url("../images/topImage03.png");
+	background-image: url("../images/top.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -39,6 +39,22 @@ body {
 	background-attachment: fixed;
 	background-position: left;
 }
+
+#title {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: auto;
+	padding: 0;
+  
+	width: 800px;
+	height: 300px;
+	font-size: 10em;
+	color: #fff;
+	text-align: center;
+  }
 
 
 /* ヘッダーコンテンツ */

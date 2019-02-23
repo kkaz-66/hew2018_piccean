@@ -14,6 +14,9 @@
 
 		<div class="content">
 		<!-- ここにコンテンツを記述 -->
+		<div id="title">
+			PICCEAN
+		</div>
 			
 		<!-- コンテンツここまで -->
 		</div>
@@ -21,5 +24,8 @@
 	<!-- readFooter -->
 </div>
 <?php require_once($_SERVER['DOCUMENT_ROOT']."/view/footerView.php"); ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./js/jquery.ripples-min.js"></script>
+<script src="./js/rippleConfig.js"></script>
 </body>
 </html>
