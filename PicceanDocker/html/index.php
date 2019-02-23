@@ -8,16 +8,24 @@
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<!-- readHeader -->
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/view/headerView.php"); ?>
+<div id="back">
+	<!-- readHeader -->
+	<?php require_once($_SERVER['DOCUMENT_ROOT']."/view/headerView.php"); ?>
 
-	<div class="content">
-	<!-- ここにコンテンツを記述 -->
-		
-	<!-- コンテンツここまで -->
-	</div>
+		<div class="content">
+		<!-- ここにコンテンツを記述 -->
+		<div id="title">
+			PICCEAN
+		</div>
+			
+		<!-- コンテンツここまで -->
+		</div>
 
-<!-- readFooter -->
+	<!-- readFooter -->
+</div>
 <?php require_once($_SERVER['DOCUMENT_ROOT']."/view/footerView.php"); ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./js/jquery.ripples-min.js"></script>
+<script src="./js/rippleConfig.js"></script>
 </body>
 </html>

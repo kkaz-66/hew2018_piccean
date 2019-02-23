@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <header>
-	<div class="logoImage"><a href="../index.php"><img src="#" alt="Picceanのロゴ画像"></a></div>
+	<div class="logoImage"><a href="../index.php"><img class="logosrc" src="#" alt="picccean"></a></div>
 	<div class="searchBox">
 		<form action="../controller/search_resultsController.php?page=1" method="get">
 			<label for="search">
