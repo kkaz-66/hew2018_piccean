@@ -58,7 +58,7 @@ ul {
 
 /* ページネーション */
 #pagiNationArea {
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 	text-align: center;
 }
 #pagiNationArea p span {
@@ -73,7 +73,7 @@ ul {
 	font-weight: bold;
 }
 #pagiNation {
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 }
 .changePage {
 	background: #eee;
