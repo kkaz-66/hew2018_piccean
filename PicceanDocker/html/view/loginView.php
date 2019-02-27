@@ -18,7 +18,7 @@
 		<div class="main">
   			<div id="form-wrapper">
 				<h1>ログイン</h1>
-				<form id="form1" action="../controller/loginCheckController.php" method="post">
+				<form action="../controller/loginCheckController.php" method="post">
 				<div class="form-item">
 					<label for=""></label>
 					<input type="text" name="id" required="required" maxlength="" placeholder="メールアドレスまたはユーザID">
@@ -30,16 +30,16 @@
 				</div>
 					<br>
 				<input type="hidden" id="inputreferrer" name="url" value="<?= $_SERVER['DOCUMENT_ROOT'].'index.php' ;?>">
-				<div class="submit">
-					<input type="submit" value="ログイン" id="button-blue">
-					<div class="ease"></div>
+				<div class="button-panel">
+					<input type="submit" class="button" value="ログイン" id="button-blue">
 				</div>
 				<?= $_POST["login_message"]; ?>
 				</form>
-				<p><a href="#">パスワードを忘れた方</a></p>
-
-				<p>会員登録がお済ではない方</p>
-				<a href="../controller/member_regist_inputController.php">新規会員登録へ</a>
+				<div class="form-footer">
+					<p><a href="#">パスワードを忘れた方</a></p>
+					<p><a href="#">会員登録がお済ではない方</a></p>
+					<a href="../controller/member_regist_inputController.php">新規会員登録へ</a>
+				</div>
 		</div>
 		<!-- コンテンツここまで -->
 	</div>
