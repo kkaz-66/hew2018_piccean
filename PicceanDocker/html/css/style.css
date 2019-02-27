@@ -98,23 +98,14 @@ header {
 	background-color: #00BCD4;
 }
 
-#loginButton{
+#loginButton,#registButton,#logoutButton,#cartButton	{
 	display: inline-block;
 	padding: 0.3em 1em;
 	text-decoration: none;
-	color: #67c5ff;
-	border: solid 2px #67c5ff;
+	color: #fff;
 	border-radius: 3px;
 	transition: .4s;
-}
-
-#registButton{
-	display: inline-block;
-	padding: 0.3em 1em;
-	text-decoration: none;
-	color: #67c5ff;
-	border: solid 2px #67c5ff;
-	border-radius: 3px;
+	background: #3879D9;
 	transition: .4s;
 }
 
@@ -124,19 +115,27 @@ header {
 	min-width: 500px;
 	line-height: 50px;
 
+}.search_container{
+  box-sizing: border-box;
 }
-#search {
-	min-width: 100px;
+.search_container input[type="text"]{
+  background: #ccddf5;
+  border: none;
+  height: 2.0em;
 }
-
-#searchButton{
-	display: inline-block;
-	padding: 0.3em 1em;
-	text-decoration: none;
-	color: #67c5ff;
-	border: solid 2px #67c5ff;
-	border-radius: 3px;
-	transition: .4s;
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container input[type="submit"]{
+  cursor: pointer;
+  border: none;
+  background: #3879D9;
+  color: #fff;
+  outline : none;
+  height: 2.2em;
+}
+.search_container ::-webkit-input-placeholder {
+  color: #3879D9;
 }
 
 /* フッターコンテンツ */
@@ -152,7 +151,14 @@ footer {
 	margin: 0 auto;
 	width: 500px;
 }
-
+/* 改良の必要あり */
+li,a{
+	text-align: center;
+	list-style: none;
+	display: inline-block;
+	color:#fff;
+	padding-left: 1em;
+}
 /**********トップページ**********/
 #topWrapper {
 	height: 100%;
