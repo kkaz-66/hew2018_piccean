@@ -51,6 +51,11 @@ require_once("../model/getter.php");
 				</div>
 				<?php
 					endforeach;
+				?>
+				<div class="buy">
+					<input type="button" onclick="location.href='./payment_confView.php'" value="購入">
+				</div>
+				<?php
 				endif;
 				?>
                 </div>
