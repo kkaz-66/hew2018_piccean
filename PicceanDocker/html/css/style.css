@@ -23,7 +23,7 @@ body {
 	flex-direction: column;
 }
 
-#back{
+.back {
 	background-image: url("../images/top.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;

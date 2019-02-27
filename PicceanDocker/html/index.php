@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<div id="back">
+<div class="back">
 	<!-- readHeader -->
 	<?php require_once($_SERVER['DOCUMENT_ROOT']."/view/headerView.php"); ?>
 
