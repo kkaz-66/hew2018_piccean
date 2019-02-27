@@ -36,7 +36,7 @@ ul {
 
 /* 画像一覧 */
 #imageWrapper {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	column-count: 5;
 	column-gap: 0;
 }
@@ -58,7 +58,7 @@ ul {
 
 /* ページネーション */
 #pagiNationArea {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	text-align: center;
 }
 #pagiNationArea p span {
@@ -73,7 +73,7 @@ ul {
 	font-weight: bold;
 }
 #pagiNation {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 .changePage {
 	background: #eee;
