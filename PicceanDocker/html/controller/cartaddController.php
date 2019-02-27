@@ -1,8 +1,10 @@
 <?php
 session_start();
+#$_SESSION = array();
+#session_destroy();
 $id = $_POST["id"];
-if(!isset($_SESSION["cart"][$id])){
-    $_SESSION["cart"][$id] = 1 ;
-}
+
+$_SESSION["cart"][$id] = $id;
+echo $_SESSION["cart"][$id];
 header('Location:'.$_SERVER['HTTP_REFERER']);
 ?>
