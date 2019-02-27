@@ -1,0 +1,39 @@
+.wrapper{
+    width: 100vw;
+    /*background-color: aqua;*/
+}
+.info{
+    height: 16vh;
+    width: 80vw;
+    /*background-color: indianred;*/
+    margin: auto
+}
+.item{
+    height: 36vh;
+    width: 80vw;
+    /*background-color: brown;*/
+    margin:auto;
+}
+.image{
+    height: 13.5vw;
+    width: 24vw;
+    /*background-color: blue;*/
+    float: left;
+    margin-top: 3vh;
+}
+.image_info{
+    height: 28vh;
+    width: 56vw;
+    /*background-color: aquamarine;*/
+    float: left; 
+    margin-top: 3vh;
+}
+.image_file{
+    width: 24vw;
+    height: 13.5vw;
+}
+.txt{
+    width: 20vw;
+    height: 28vh;
+    float: left;
+}

@@ -22,7 +22,7 @@ $user_name = getUser($image["user_id"])
 
 	<div class="content">
 	<!-- ここにコンテンツを記述 -->
-	<form action="" method="post">
+	<form action="../controller/cartaddController.php" method="post">
 		<div class="wrapper">
 			<div class="leftbox">
 				<div class="picture">
@@ -56,6 +56,7 @@ $user_name = getUser($image["user_id"])
 				</div>
 				<div class="map">ここに地図</div>
 				<div class="buy">
+					<input type = "hidden" name = "id" value = <?php echo $id ?>>
 					<input type="submit" class="submit_b"value="カートに入れる">
 				</div>
 				<div class="shop">
