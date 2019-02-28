@@ -17,12 +17,12 @@
         <button id="registButton" onclick="location.href='../controller/member_regist_inputController.php'">新規登録</button>
         <?php else: ?>
         <!-- ログイン時 -->
-        <button id="logoutButton" onclick="location.href='../model/logout.php'">ログアウト</button>
-        <button id="cartButton" onclick="location.href='../controller/cart_list.php'">カート</button>
+            <button id="logoutButton" onclick="location.href='../model/logout.php'">ログアウト</button>
+            <button id="cartButton" onclick="location.href='../controller/cart_list.php'">カート</button>
         <span class="menuIcon"></span>
         <div class="accbox">
-        <!--ラベル1-->
-        <label for="label1">クリックして表示1</label>
+        <!--アコーディオンメニュー-->
+        <label for="label1">あ</label>
         <input type="checkbox" id="label1" class="cssacc" />
         <div class="accshow">
         <!--ここに隠す中身-->
