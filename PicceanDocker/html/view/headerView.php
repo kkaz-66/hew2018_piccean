@@ -20,6 +20,20 @@
         <button id="logoutButton" onclick="location.href='../model/logout.php'">ログアウト</button>
         <button id="cartButton" onclick="location.href='../controller/cart_list.php'">カート</button>
         <span class="menuIcon"></span>
+        <div class="accbox">
+        <!--ラベル1-->
+        <label for="label1">クリックして表示1</label>
+        <input type="checkbox" id="label1" class="cssacc" />
+        <div class="accshow">
+        <!--ここに隠す中身-->
+            <dt>ユーザのアカウント画像</dt>
+            <dd class="menuItem"><a href="../controller/member_info_edit.php">会員情報ページ</a></dd>
+            <dd class="menuItem"><a href="../controller/image_add.php">画像追加ページ</a></dd>
+            <dd class="menuItem"><a href="../controller/member_image_listController.php">アップロード画像一覧ページ</a></dd>
+            <dd class="menuItem"><a href="../controller/payment_image_listController.php">購入画像一覧ページ</a></dd>
+        </div>
+        <!--//ラベル1-->
+        <!--
         <dl id="headerMenu">
             <dt>ユーザのアカウント画像</dt>
             <dd class="menuItem"><a href="../controller/member_info_edit.php">会員情報ページ</a></dd>
@@ -27,6 +41,7 @@
             <dd class="menuItem"><a href="../controller/member_image_listController.php">アップロード画像一覧ページ</a></dd>
             <dd class="menuItem"><a href="../controller/payment_image_listController.php">購入画像一覧ページ</a></dd>
         </dl>
+        -->
         <?php endif; ?>
     </div>
 </header> 
