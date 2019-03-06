@@ -10,9 +10,10 @@ require_once("../model/getter.php");
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Piccean</title>
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/bg.css">
 	<link rel="stylesheet" href="../css/cart.css">
 </head>
-<body>
+<body class = "back_other">
 <div id="back">
 	<!-- readHeader -->
 	<?php require_once($_SERVER['DOCUMENT_ROOT']."/view/headerView.php"); ?>
@@ -37,9 +38,13 @@ require_once("../model/getter.php");
 					</div>
 					<div class="image_info">
 						<div class="txt">
-							タイトル:<?php echo $image["image_title"] ?>
-							<br>
-							アップロード者:<?php echo $user_name ?>
+							<p>
+								タイトル:<?php echo $image["image_title"] ?>
+								<br>
+							</p>
+							<p>
+								アップロード者:<?php echo $user_name ?>
+							</p>
 						</div>
 						<div class="del">
 							<form action="../controller/cartdelController.php" method = "post">
@@ -48,10 +53,12 @@ require_once("../model/getter.php");
 							</form>
 						</div>
 					</div>
+					<hr>
 				</div>
 				<?php
 					endforeach;
 				?>
+				<hr>
 				<div class="buy">
 					<input type="button" onclick="location.href='./payment_confView.php'" value="購入">
 				</div>
