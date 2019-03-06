@@ -17,21 +17,26 @@
         <button id="registButton" onclick="location.href='../controller/member_regist_inputController.php'">新規登録</button>
         <?php else: ?>
         <!-- ログイン時 -->
-            <button id="logoutButton" onclick="location.href='../model/logout.php'">ログアウト</button>
-            <button id="cartButton" onclick="location.href='../controller/cart_list.php'">カート</button>
-        <span class="menuIcon"></span>
-        <div class="accbox">
-        <!--アコーディオンメニュー-->
-        <label for="label1">あ</label>
-        <input type="checkbox" id="label1" class="cssacc" />
-        <div class="accshow">
-        <!--ここに隠す中身-->
-            <dt>ユーザのアカウント画像</dt>
-            <dd class="menuItem"><a href="../controller/member_info_edit.php">会員情報ページ</a></dd>
-            <dd class="menuItem"><a href="../controller/image_add.php">画像追加ページ</a></dd>
-            <dd class="menuItem"><a href="../controller/member_image_listController.php">アップロード画像一覧ページ</a></dd>
-            <dd class="menuItem"><a href="../controller/payment_image_listController.php">購入画像一覧ページ</a></dd>
-        </div>
+        <ul class="headerBox">
+        <li>
+            <div class="accbox">
+            <!--アコーディオンメニュー-->
+            <label for="label1">あ</label>
+            <input type="checkbox" id="label1" class="cssacc" />
+            <div class="accshow">
+            <!--ここに隠す中身-->
+                <dt>ユーザのアカウント画像</dt>
+                <dd class="menuItem"><a href="../controller/member_info_edit.php">会員情報ページ</a></dd>
+                <dd class="menuItem"><a href="../controller/image_add.php">画像追加ページ</a></dd>
+                <dd class="menuItem"><a href="../controller/member_image_listController.php">アップロード画像一覧ページ</a></dd>
+                <dd class="menuItem"><a href="../controller/payment_image_listController.php">購入画像一覧ページ</a></dd>
+            </div>
+            </li>
+                <li><button id="logoutButton" onclick="location.href='../model/logout.php'">ログアウト</button></li>
+                <li><button id="cartButton" onclick="location.href='../controller/cart_list.php'">カート</button><li>
+            <!-- <span class="menuIcon"></span> -->
+            
+        </ul>
         <!--//ラベル1-->
         <!--
         <dl id="headerMenu">
