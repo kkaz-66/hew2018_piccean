@@ -7,10 +7,11 @@
 	<title>「<?= $_POST["keywords"]; ?>」の検索結果 - Piccean</title>
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/search_resultsView.css">
+	<link rel="stylesheet" href="../css/bg.css">
 	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="../js/search_results.js"></script>
 </head>
-<body>
+<body class = "back_other">
 <!-- readHeader -->
 <?php require_once($_SERVER['DOCUMENT_ROOT']."/view/headerView.php"); ?>
 
