@@ -1,6 +1,7 @@
 .wrapper{
     width: 100vw;
     height: 100vh;
+    background-color: rgba(0, 0, 0 ,0.4);
 }
 .leftbox{
     width: 50vw;
@@ -79,4 +80,8 @@
 .image_file{
     width: 32vw;
     height: 24vw;
+}
+.title{
+    font-size: 24px;
+    font-weight: bold;
 }
