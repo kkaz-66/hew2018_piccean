@@ -1,3 +1,12 @@
+<?php 
+session_start();
+require_once("../model/payment_compModel.php");
+if($_SERVER['HTTP_REFERER'] == "http://localhost:8082/view/payment_confView.php"){
+	payment_comp();
+}else{
+	header('Location:'.$_SERVER['HTTP_REFERER']);
+}
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
