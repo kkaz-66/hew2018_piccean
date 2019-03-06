@@ -222,6 +222,9 @@ li,a{
 	color:#fff;
 	padding-left: 1em;
 }
+p{
+	color: #ddd;
+}
 /**********トップページ**********/
 #topWrapper {
 	height: 100%;
