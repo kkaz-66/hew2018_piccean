@@ -16,7 +16,7 @@
 }
 .picture{
     width: 32vw;
-    height: 18vw;
+    height: 24vw;
     margin: auto;
     margin-top: 8vh;
     text-align: center;
@@ -78,5 +78,5 @@
 }
 .image_file{
     width: 32vw;
-    height: 18vw;
+    height: 24vw;
 }
