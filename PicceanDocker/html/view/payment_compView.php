@@ -15,10 +15,11 @@ if($_SERVER['HTTP_REFERER'] == "http://localhost:8082/view/payment_confView.php"
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Piccean</title>
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/bg.css">
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/payment_comp.css">
 </head>
-<body>
+<body class = "back_other">
 <!-- readHeader -->
 <?php require_once($_SERVER['DOCUMENT_ROOT']."/view/headerView.php"); ?>
 
@@ -28,12 +29,8 @@ if($_SERVER['HTTP_REFERER'] == "http://localhost:8082/view/payment_confView.php"
     		<p class="p1">購入が完了しました</p>
 		</div>
 		<div class="ButtonBox">
-			<div class="button , bl">
-				<p class="button_msg">トップに戻る</p> 
-			</div>
-			<div class="button , br">
-			 <p class="button_msg">ダウンロード</p>
-			</div>
+			<input type="button" onclick="location.href='../index.php'" value="トップに戻る">
+			<input type="button" onclick="location.href='../index.php'" value="ダウンロード">
 		</div>
 	<!-- コンテンツここまで -->
 	</div>
