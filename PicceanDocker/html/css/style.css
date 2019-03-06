@@ -73,6 +73,7 @@ header {
 }
 #headNavi {
 	min-width: 200px;
+	max-height: 50px;
 	/*background: yellow;*/
 	line-height: 50px;
 	text-align: center;
@@ -139,6 +140,64 @@ header {
 }
 .search_container ::-webkit-input-placeholder {
   color: #3879D9;
+}
+
+/* ログイン時ヘッダー */
+ul.headerBox{
+	display:-webkit-flex;
+display:flex;
+width:100%;
+list-style-type:none;
+margin:0; padding:0;
+}
+
+.accbox label {
+    display: block;
+    margin: 0;
+    padding : 0;
+    color :#2f8fcf;
+    font-weight: bold;
+    background :#a4cbf3;
+    cursor :pointer;
+    transition: all 0.5s;
+}
+
+.menuItem a{
+	color: #333;
+	padding-right: 50px;
+}
+
+.accbox label:hover {
+    background :#85baef;
+}
+
+.accbox input {
+    display: none;
+}
+
+.accbox .accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.accbox{
+
+	width: 50px;
+	height: 50px;
+}
+
+.accshow{
+	width: 350px;
+}
+
+.cssacc:checked + .accshow {
+    height: auto;
+    padding: 0;
+    background: #eaeaea;
+    opacity: 1;
 }
 
 /* フッターコンテンツ */
