@@ -14,10 +14,11 @@ $user_name = getUser($image["user_id"])
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Piccean</title>
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/bg.css">
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/download.css">
 </head>
-<body>
+<body class = "back_other">
 <!-- readHeader -->
 <?php require_once($_SERVER['DOCUMENT_ROOT']."/view/headerView.php"); ?>
 
@@ -61,7 +62,10 @@ $user_name = getUser($image["user_id"])
 					<p><?php echo $image["image_size"]?>サイズ</p>
 				</div>
 				<div class="dlbutton">
-					<input type="submit" value="ダウンロード">
+					<form action="../controller/downloader.php" method="post">
+						<input type="hidden" name="id"value="<?php echo $id ?>">
+						<input type="submit" onclick="location.href='./payment_compView.php'" value="ダウンロード">
+					</form>
 				</div>
 			</div>
 		</div>
