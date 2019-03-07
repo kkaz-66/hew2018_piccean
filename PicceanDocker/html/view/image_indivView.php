@@ -63,7 +63,9 @@ $user_name = getUser($image["user_id"])
 						<?php echo $category ?>
 					</p>
 				</div>
-				<div class="map">ここに地図</div>
+				<div class="map">
+				<iframe class = "map_frame" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="http://maps.google.co.jp/maps?q=<?php echo $shop?> ダイビング&output=embed&t=m&z=15"></iframe>
+				</div>
 				<div class="buy">
 					<input type = "hidden" name = "id" value = <?php echo $id ?>>
 					<input type="submit" class="submit_b"value="カートに入れる">

@@ -57,7 +57,7 @@
     /*background-color: teal;*/
 }
 .map{
-    margin:2vh auto;
+    margin:2vh 0;
     width: 36vw;
     height: 18vw;;
     /*background-color: hotpink;*/
@@ -84,4 +84,8 @@
 .title{
     font-size: 24px;
     font-weight: bold;
+}
+.map_frame{
+    width: 36vw;
+    height: 18vw;
 }
