@@ -32,8 +32,8 @@
 .image{
     border: solid 2px;
     margin: 10vh  auto 1vh auto;
-    width: 18vw;
-    height: 12vw;
+    width: 20vw;
+    height: 15vw;
     border-color: gray;
     background-color: coral;
 }

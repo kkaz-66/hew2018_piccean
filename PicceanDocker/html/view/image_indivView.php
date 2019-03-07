@@ -15,8 +15,9 @@ $user_name = getUser($image["user_id"])
 	<title>Piccean</title>
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/image_indiv.css">
+	<link rel="stylesheet" href="../css/bg.css">
 </head>
-<body>
+<body class = "back_other">
 <!-- readHeader -->
 <?php require_once($_SERVER['DOCUMENT_ROOT']."/view/headerView.php"); ?>
 
@@ -35,24 +36,32 @@ $user_name = getUser($image["user_id"])
 						<a href="" class="">タグ </a>
 					</div>
 					<div class="comment">
-						コメント:
-						<br>
-						<?php echo $image["image_comment"]?>
+						<p>
+							コメント:
+							<br>
+							<?php echo $image["image_comment"]?>
+						</p>
 					</div>
 					<div class="user">
-						投稿者名
-						<?php echo $user_name?>
+						<p>
+							投稿者名
+							<?php echo $user_name?>
+						</p>
 					</div>
 				</div>
 			</div>
 			<div class="rightbox">
 				<div class="info_r">
-					タイトル:
+					<p class = "title">
+						タイトル:
 					<?php echo $image["image_title"] ?>
+					</p>
 				</div>
 				<div class="category">
-					カテゴリ:
-					<?php echo $category ?>
+					<p>
+						カテゴリ:
+						<?php echo $category ?>
+					</p>
 				</div>
 				<div class="map">ここに地図</div>
 				<div class="buy">
@@ -60,12 +69,16 @@ $user_name = getUser($image["user_id"])
 					<input type="submit" class="submit_b"value="カートに入れる">
 				</div>
 				<div class="shop">
-					ショップ名:
-					<?php echo $shop ?>
+					<p>
+						ショップ名:
+						<?php echo $shop ?>
+					</p>
 				</div>
 				<div class="exif">
-					使用機材:
-					<?php echo $image["image_equipments"]?>
+					<p>
+						使用機材:
+						<?php echo $image["image_equipments"]?>
+					</p>
 				</div>
 			</div>
 		</div>
