@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+h1 {
+	color: #fff;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -8,6 +12,12 @@ ul {
 
 .content {
 	margin: 0 5%;
+}
+
+#imageMenuBox {
+	padding: 5px;
+	margin-bottom: 5px;
+	background: rgba(0, 0, 0, 0.4);
 }
 
 /* 画像詳細メニュー */
@@ -24,9 +34,15 @@ ul {
 	vertical-align: text-top;
 	margin: 0 10px;
 }
+.menuBox label {
+	color: #fff;
+}
 .menuItem {
 	margin-top: 0.5em;
 }
+.menuItem li {
+	color: #fff;
+} 
 .floatRight {
 	float: right;
 }
@@ -62,7 +78,10 @@ ul {
 	text-align: center;
 }
 #pagiNationArea p span {
-	font-size: 0.8em;
+	font-size: 1em;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 0 5px #000;
 }
 #nextPage {
 	width: 60%;
@@ -83,7 +102,7 @@ ul {
 	cursor: pointer;
 }
 .current {
-	background: #87CEFA;
+	background: #3879D9;
 	color: #fff;
 }
 .pageButton {

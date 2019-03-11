@@ -19,11 +19,11 @@
 		</div>
 			
 		<!-- コンテンツここまで -->
-		</div>
-
+	</div>
+	
 	<!-- readFooter -->
+	<?php //require_once($_SERVER['DOCUMENT_ROOT']."/view/footerView.php"); ?>
 </div>
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/view/footerView.php"); ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="./js/jquery.ripples-min.js"></script>
 <script src="./js/rippleConfig.js"></script>

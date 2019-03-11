@@ -24,27 +24,26 @@ require_once("../model/getter.php");
 				<div class="info">
 					価格________
 				</div>
-				<?php 
-				if($_SESSION["cart"]):
-					foreach($_SESSION["cart"] as $id):
-				?>
-				<div class="item">
-					<div class="image">
-						<?php 
-							$image = getImage($id);  
-							$user_name = getUser($image["user_id"])
-						?>
-						<img class="image_file" src="<?= $image["image_file"] ?>" alt="test">
-					</div>
-					<div class="image_info">
-						<div class="txt">
-							<p>
-								タイトル:<?php echo $image["image_title"] ?>
-								<br>
-							</p>
-							<p>
-								アップロード者:<?php echo $user_name ?>
-							</p>
+				<div id="itemList">
+					<?php 
+					if($_SESSION["cart"]):
+						foreach($_SESSION["cart"] as $id):
+					?>
+					<div class="item">
+						<div class="image">
+							<?php 
+								$image = getImage($id);  
+								$user_name = getUser($image["user_id"])
+							?>
+							<img class="image_file" src="<?= $image["image_file"] ?>" alt="test">
+						</div>
+						<div class="image_info">
+							<div class="txt">
+								<p>
+									タイトル:<?php echo $image["image_title"] ?>
+									<br>
+								</p>
+							</div>
 						</div>
 						<div class="del">
 							<form action="../controller/cartdelController.php" method = "post">
@@ -53,12 +52,10 @@ require_once("../model/getter.php");
 							</form>
 						</div>
 					</div>
-					<hr>
+					<?php
+						endforeach;
+					?>
 				</div>
-				<?php
-					endforeach;
-				?>
-				<hr>
 				<div class="buy">
 					<input type="button" onclick="location.href='./payment_confView.php'" value="購入">
 				</div>

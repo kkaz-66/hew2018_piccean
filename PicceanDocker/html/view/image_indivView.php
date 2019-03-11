@@ -33,7 +33,7 @@ $bought_flag = buy_history_check($user_id , $id);
 
     <div class="content">
         <!-- ここにコンテンツを記述 -->
-        <form action="../controller/cartaddController.php" method="post">
+        <form class="cartForm" action="../controller/cartaddController.php" method="post">
             <div class="wrapper">
                 <div class="leftbox">
                     <div class="picture">
@@ -51,7 +51,7 @@ $bought_flag = buy_history_check($user_id , $id);
                         </div>
                         <div class="user">
                             <p>
-                                投稿者名
+                                投稿者名:
                                 <?php echo $user_name ?>
                             </p>
                         </div>
@@ -70,6 +70,12 @@ $bought_flag = buy_history_check($user_id , $id);
                             <?php echo $category ?>
                         </p>
                     </div>
+					<div class="shop">
+						<p>
+							ショップ名:
+							<?php echo $shop ?>
+						</p>
+					</div>
                     <div class="map">
                         <iframe class="map_frame" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="http://maps.google.co.jp/maps?q=<?php echo $shop ?> ダイビング&output=embed&t=m&z=15"></iframe>
                     </div>
@@ -80,21 +86,15 @@ $bought_flag = buy_history_check($user_id , $id);
 							echo "<p>購入済みです</p>";
 						}
 						elseif ($user_name != $user_id) {
-							$b = '<input type ="submit" class="submit_b"value="カートに入れ る">';
+							$b = '<input type ="submit" class="submit_b"value="カートに入れる">';
 							echo $b;
 						}
 						?>
                     </div>
-                    <div class="shop">
-                        <p>
-                            ショップ名:
-                            <?php echo $shop ?>
-                        </p>
-                    </div>
                     <div class="exif">
                         <p>
                             使用機材:
-                            <?php echo $image["image_eq uipments"]?>
+                            <?php echo $image["image_equipments"]?>
                         </p>
                     </div>
                 </div>

@@ -17,73 +17,76 @@
 
 	<div class="content">
 	<!-- ここにコンテンツを記述 -->
+
+	<div id="imageMenuBox">
+		<h1>「<?= $_POST["keywords"]; ?>」の検索結果&nbsp;<?= $_POST["count"]; ?>&nbsp;件</h1>
 	
-	<h1>「<?= $_POST["keywords"]; ?>」の検索結果&nbsp;<?= $_POST["count"]; ?>&nbsp;件</h1>
-
-	<!-- 詳細条件メニュー -->
-	<div id="imageMenu" class="clearfix">
-		<div class="menuBox">
-			<label>サイズ：</label>
-			<ul class="menuItem">
-				<li><input type="radio" class="addSize" name="imageSize" value="-1" <?= $_POST["sizeReqNone"]; ?>>指定なし</li>
-				<li><input type="radio" class="addSize" name="imageSize" value="S" <?= $_POST["sizeReqS"]; ?>>S</li>
-				<li><input type="radio" class="addSize" name="imageSize" value="M" <?= $_POST["sizeReqM"]; ?>>M</li>
-				<li><input type="radio" class="addSize" name="imageSize" value="L" <?= $_POST["sizeReqL"]; ?>>L</li>
-			</ul>
-		</div>
-
-		<div class="menuBox">
-			<label>カテゴリ：</label>
-			<div class="menuItem">
-				<select name="categoryId" id="categoryId">
-					<option class="addCategory" value="-1" <?= $_POST["catReqNone"]; ?>>選択なし</option>
-					<option class="addCategory" value="1" <?= $_POST["catReq1"]; ?>>生物</option>
-					<option class="addCategory" value="2" <?= $_POST["catReq2"]; ?>>地形</option>
-					<option class="addCategory" value="3" <?= $_POST["catReq3"]; ?>>構造物</option>
-					<option class="addCategory" value="4" <?= $_POST["catReq4"]; ?>>人物</option>
-				</select>
-			</div>
-		</div>
-
-		<div class="menuBox">
-			<label>画像の向き：</label>
-			<ul class="menuItem">
-				<li><input type="radio" class="addDirection" name="imageDirection" value="-1" <?= $_POST["dirReqNone"]; ?>>指定なし</li>
-				<li><input type="radio" class="addDirection" name="imageDirection" value="0" <?= $_POST["dirReq0"]; ?>>横</li>
-				<li><input type="radio" class="addDirection" name="imageDirection" value="1" <?= $_POST["dirReq1"]; ?>>縦</li>
-			</ul>
-		</div>
-
-		<div class="floatRight selectBox">
+		<!-- 詳細条件メニュー -->
+		<div id="imageMenu" class="clearfix">
 			<div class="menuBox">
-				<label>並び替え</label>
+				<label>サイズ：</label>
+				<ul class="menuItem">
+					<li><input type="radio" class="addSize" name="imageSize" value="-1" <?= $_POST["sizeReqNone"]; ?>>指定なし</li>
+					<li><input type="radio" class="addSize" name="imageSize" value="S" <?= $_POST["sizeReqS"]; ?>>S</li>
+					<li><input type="radio" class="addSize" name="imageSize" value="M" <?= $_POST["sizeReqM"]; ?>>M</li>
+					<li><input type="radio" class="addSize" name="imageSize" value="L" <?= $_POST["sizeReqL"]; ?>>L</li>
+				</ul>
+			</div>
+	
+			<div class="menuBox">
+				<label>カテゴリ：</label>
 				<div class="menuItem">
-					<select name="imageSort" id="imageSort">
-						<option class="addSort" value="-1" <?= $_POST["sortReqNone"]; ?>>選択なし</option>
-						<option class="addSort" value="0" <?= $_POST["sortReq0"]; ?>>投稿日の新しい順</option>
-						<option class="addSort" value="1" <?= $_POST["sortReq1"]; ?>>投稿日の古い順</option>
-						<option class="addSort" value="2" <?= $_POST["sortReq2"]; ?>>ダウンロード数の多い順</option>
-						<option class="addSort" value="3" <?= $_POST["sortReq3"]; ?>>ダウンロード数の少ない順</option>
-						<option class="addSort" value="4" <?= $_POST["sortReq4"]; ?>>閲覧数の多い順</option>
-						<option class="addSort" value="5" <?= $_POST["sortReq5"]; ?>>閲覧数の少ない順</option>
+					<select name="categoryId" id="categoryId">
+						<option class="addCategory" value="-1" <?= $_POST["catReqNone"]; ?>>選択なし</option>
+						<option class="addCategory" value="1" <?= $_POST["catReq1"]; ?>>生物</option>
+						<option class="addCategory" value="2" <?= $_POST["catReq2"]; ?>>地形</option>
+						<option class="addCategory" value="3" <?= $_POST["catReq3"]; ?>>構造物</option>
+						<option class="addCategory" value="4" <?= $_POST["catReq4"]; ?>>人物</option>
 					</select>
 				</div>
 			</div>
 	
 			<div class="menuBox">
-				<label>表示件数</label>
-				<div class="menuItem">
-					<select name="dispNum" id="dispNum">
-						<option class="addDispNum" value="10" <?= $_POST["dispNum0"]; ?>>10件</option>
-						<option class="addDispNum" value="20" <?= $_POST["dispNum1"]; ?>>20件</option>
-						<option class="addDispNum" value="50" <?= $_POST["dispNum2"]; ?>>50件</option>
-						<option class="addDispNum" value="100" <?= $_POST["dispNum3"]; ?>>100件</option>
-					</select>
+				<label>画像の向き：</label>
+				<ul class="menuItem">
+					<li><input type="radio" class="addDirection" name="imageDirection" value="-1" <?= $_POST["dirReqNone"]; ?>>指定なし</li>
+					<li><input type="radio" class="addDirection" name="imageDirection" value="0" <?= $_POST["dirReq0"]; ?>>横</li>
+					<li><input type="radio" class="addDirection" name="imageDirection" value="1" <?= $_POST["dirReq1"]; ?>>縦</li>
+				</ul>
+			</div>
+	
+			<div class="floatRight selectBox">
+				<div class="menuBox">
+					<label>並び替え</label>
+					<div class="menuItem">
+						<select name="imageSort" id="imageSort">
+							<option class="addSort" value="-1" <?= $_POST["sortReqNone"]; ?>>選択なし</option>
+							<option class="addSort" value="0" <?= $_POST["sortReq0"]; ?>>投稿日の新しい順</option>
+							<option class="addSort" value="1" <?= $_POST["sortReq1"]; ?>>投稿日の古い順</option>
+							<option class="addSort" value="2" <?= $_POST["sortReq2"]; ?>>ダウンロード数の多い順</option>
+							<option class="addSort" value="3" <?= $_POST["sortReq3"]; ?>>ダウンロード数の少ない順</option>
+							<option class="addSort" value="4" <?= $_POST["sortReq4"]; ?>>閲覧数の多い順</option>
+							<option class="addSort" value="5" <?= $_POST["sortReq5"]; ?>>閲覧数の少ない順</option>
+						</select>
+					</div>
+				</div>
+		
+				<div class="menuBox">
+					<label>表示件数</label>
+					<div class="menuItem">
+						<select name="dispNum" id="dispNum">
+							<option class="addDispNum" value="10" <?= $_POST["dispNum0"]; ?>>10件</option>
+							<option class="addDispNum" value="20" <?= $_POST["dispNum1"]; ?>>20件</option>
+							<option class="addDispNum" value="50" <?= $_POST["dispNum2"]; ?>>50件</option>
+							<option class="addDispNum" value="100" <?= $_POST["dispNum3"]; ?>>100件</option>
+						</select>
+					</div>
 				</div>
 			</div>
 		</div>
+		<!-- 詳細条件メニューここまで -->
 	</div>
-	<!-- 詳細条件メニューここまで -->
+	
 
 	<!-- 画像一覧 -->
 	<?php if(isset($_POST["images"]) && $_POST["count"] > 0 && $_POST["currentPage"] <= $_POST["lastPage"] && $_POST["currentPage"] > 0): ?>

@@ -1,10 +1,13 @@
 <?php session_start(); ?>
 <header>
-    <div class="logoImage"><a href="../index.php"><img class="logosrc" src="#" alt="picccean"></a></div>
+	<!-- <div class="logoImage"><a href="../index.php"><img class="logosrc" src="#" alt="picccean"></a></div> -->
+	<div class="titleBox">
+		<div class="titleLogo"><a href="../index.php">Piccean</a></div>
+	</div>
     <div class="searchBox">
         <form action="../controller/search_resultsController.php?page=1" method="get" class="search_container">
             <label for="search">
-                <input type="text" name="keywords" size="25" maxlength="255" placeholder="　キーワード検索">
+                <input type="text" name="keywords" size="25" maxlength="255" placeholder="キーワード検索">
             </label>
             <input type="hidden" name="fromHeader">
             <input type="submit" value="検索">
