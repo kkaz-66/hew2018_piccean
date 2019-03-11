@@ -21,7 +21,7 @@
 		<div id="imageWrapper">
 			<?php foreach($_POST["images"] as $image): ?>
 				<div class="imageBox">
-					<a href="../controller/image_infoController.php?imageId=<?= $image["image_id"]; ?>">
+					<a href="../view/image_indivView.php?imageId=<?= $image["image_id"]; ?>">
 						<img src="<?= $image["image_thumbnail"]; ?>" alt="<?= $image["image_title"]; ?>">
 					</a>
 					<p class="imageTitle"><?= $image["image_title"]; ?></p>

@@ -61,7 +61,9 @@
 
 </html>
 <?php
-$msg =  $_GET["msg"];
-$alert = "<script type='text/javascript'>alert('$msg');</script>";
-echo $alert; 
-?>
+if (isset($_GET["msg"])) {
+	$msg =  $_GET["msg"];
+	$alert = "<script type='text/javascript'>alert('$msg');</script>";
+	echo $alert;
+}
+?> 
