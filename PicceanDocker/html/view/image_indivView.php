@@ -70,6 +70,12 @@ $bought_flag = buy_history_check($user_id , $id);
                             <?php echo $category ?>
                         </p>
                     </div>
+					<div class="shop">
+						<p>
+							ショップ名:
+							<?php echo $shop ?>
+						</p>
+					</div>
                     <div class="map">
                         <iframe class="map_frame" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="http://maps.google.co.jp/maps?q=<?php echo $shop ?> ダイビング&output=embed&t=m&z=15"></iframe>
                     </div>
@@ -84,12 +90,6 @@ $bought_flag = buy_history_check($user_id , $id);
 							echo $b;
 						}
 						?>
-                    </div>
-                    <div class="shop">
-                        <p>
-                            ショップ名:
-                            <?php echo $shop ?>
-                        </p>
                     </div>
                     <div class="exif">
                         <p>

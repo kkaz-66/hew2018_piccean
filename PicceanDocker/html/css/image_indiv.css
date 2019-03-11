@@ -59,12 +59,10 @@
 }
 .info_r{
     width: 100%;
-    /*background-color: darkblue;*/
 }
 .category{
 	width: 100%;
 	margin-bottom: 20px;
-    /*background-color: teal;*/
 }
 .category p {
 	margin: 0;
@@ -78,13 +76,15 @@
 .map{
 	width: 100%;
 	margin-bottom: 20px;
-    /*background-color: hotpink;*/
 }
 .buy{
-	width: 100%;
+	position: relative;
+	width: 36vw;
 	margin-bottom: 20px;
 }
 .buy p {
+	position: absolute;
+	right: 0;
 	margin: 0;
 	padding: 0;
 	color: yellow;
@@ -92,13 +92,47 @@
 	font-size: 20px;
 	font-weight: bold;
 }
+.submit_b {
+	position: absolute;
+	right: 0;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	background: #f16272;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 5px;
+	transition: .2s ease-in-out;
+}
+.submit_b:hover {
+	cursor: pointer;
+	background: #ee3e52;
+}
 .shop{
-    width: 100%;
-    /*background-color: chartreuse*/
+	width: 100%;
+	margin-bottom: 20px;
+}
+.shop p {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	background: #3879D9;
+	color: #fff;
 }
 .exif{
-    width: 100%;
-    /*background-color: gold;*/
+	width: 36vw;
+	margin-bottom: 20px;
+}
+.exif p {
+	display: inline-block;
+	max-width: calc(100% - 200px);
+	margin: 0;
+	padding: 0;
+	padding: 10px;
+	background: #fff;
+	border-radius: 5px;
 }
 .image_file{
     width: 32vw;
