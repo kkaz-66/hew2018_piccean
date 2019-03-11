@@ -8,6 +8,7 @@
 	font-family: "游ゴシック","Yu Gothic","ヒラギノ角ゴ Pro W3",
 				 "Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"MS Pゴシック",sans-serif;
 	letter-spacing: 0.4px;
+	-webkit-appearance: none;
 }
 
 /* 全体設定 */
@@ -124,12 +125,14 @@ header {
   box-sizing: border-box;
 }
 .search_container input[type="text"]{
-  background: #ccddf5;
-  border: none;
-  height: 2.0em;
+	background: #fff;
+	border: none;
+	height: 2.0em;
+	padding-left: 1rem;
 }
 .search_container input[type="text"]:focus {
   outline: 0;
+  background: #ccddf5;
 }
 .search_container input[type="submit"]{
   cursor: pointer;
@@ -215,12 +218,19 @@ footer {
 	width: 500px;
 }
 /* 改良の必要あり */
-li,a{
+#footerNavi ul li{
 	text-align: center;
 	list-style: none;
 	display: inline-block;
-	color:#fff;
 	padding-left: 1em;
+}
+#footerNavi ul li a {
+	color:#fff;
+	text-decoration: none;
+	text-shadow: 0 0 5px #000;
+}
+#footerNavi ul li a:hover {
+	text-decoration: underline;
 }
 p{
 	color: #ddd;
