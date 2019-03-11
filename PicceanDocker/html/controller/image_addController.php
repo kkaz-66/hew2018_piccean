@@ -13,9 +13,9 @@ $image_comment = $_POST["comment"];
 $image_resolution = "2000 × 1500";
 $image_direction = 0 ;
 $date_time = date("Y-m-d H:i:s");
-print("---/////---/-/-/-/");
-print($date_time);
-print("---/////---/-/-/-/");
+#print("---/////---/-/-/-/");
+#print($date_time);
+#print("---/////---/-/-/-/");
 
 $dict = array(
     'user_id' => $user_id,
@@ -46,12 +46,13 @@ if(is_uploaded_file($_FILES["upload"]["tmp_name"])){
         $dict['image_file'] = "../images/" . $filename;
         $dict['image_thumbnail'] = "../images/" . $filename;
         $res = upload($dict);
-        print($res);
+        #print($res);
     }else{
-        print("UPLOAD_ERROR");
+        #print("UPLOAD_ERROR");
     }
 }else{
-    print("未選択");
+    #print("未選択");
     #ファイル未選択
 }
+header('Location:'. " ./member_image_listController.php");
 ?>
