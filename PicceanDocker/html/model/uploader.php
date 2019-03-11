@@ -2,14 +2,14 @@
 require_once("db_model.php");
 
 function upload($dict){
-    foreach($dict as $key => $item){
+    #foreach($dict as $key => $item){
         #print($key . "=");
         #print($item . "</br>");
         #print("</br></br>");
         #$do =",";
         #print("INSERT INTO T_IMAGE(user_id,shop_id,category_id,image_size,image_title,image_location,image_equipments,image_comment,image_exif,image_file,image_thumbnail,image_resolution,image_direction,image_date,image_views,image_downloads,image_state)VALUES(". $dict['user_id'] . $do .$dict['shop_id'] . $do . $dict['category_id'] .$do. $dict['image_size'] .$do. $dict['image_title'] .$do. $dict['image_location'] .$do. $dict['image_equipments'] .$do. $dict['image_comment'] . $do."NULL" .$do. $dict['image_file'] .$do. $dict['image_thumbnail'] .$do. $dict['image_resolution'] .$do. $dict['image_direction'] .$do. $dict['image_date'] .$do. $dict['zero'] .$do. $dict['zero'] .$do. $dict['zero'] . ")");
         #print("</br></br>");
-    }
+    #}
     $con = db_connect();
     $sql = "INSERT INTO  T_IMAGE (user_id,shop_id,category_id,image_size,image_title,image_location,image_equipments,image_comment,image_exif,image_file,image_thumbnail,image_resolution,image_direction,image_date,image_views,image_downloads,image_state)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
     $stmt = mysqli_prepare($con, $sql);
