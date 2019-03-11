@@ -96,9 +96,9 @@ if (!isset($_SESSION["id"])) {
             </div>
             <div class="rightBox">
                 <div class="size">
-                    <input type="radio" name="image_size" value="S"/>Sサイズ
-                    <input type="radio" name="image_size" value="M"/>Mサイズ
-                    <input type="radio" name="image_size" value="L"/>Lサイズ
+                    <input type="radio" name="image_size" value="S" />Sサイズ
+                    <input type="radio" name="image_size" value="M" />Mサイズ
+                    <input type="radio" name="image_size" value="L" />Lサイズ
                 </div>
                 <div class="dlbutton">
                     <input type="submit" value="アップロード">
@@ -113,4 +113,11 @@ if (!isset($_SESSION["id"])) {
     <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/view/footerView.php"); ?>
 </body>
 
-</html> 
+</html>
+<?php
+if (isset($_GET["err"])) {
+    $err = $_GET["err"];
+    $alert = "<script type='text/javascript'>alert('$err');</script>";
+    echo $alert;
+}
+?>

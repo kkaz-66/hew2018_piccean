@@ -2,6 +2,29 @@
 session_start();
 require_once("../model/uploader.php");
 
+$subscripts =[
+    "id",
+    "shop_name",
+    "image_size",
+    "title",
+    "location",
+    "equipments",
+    "comment",
+];
+$break = 0;
+$header;
+foreach($subscripts as $subscript){
+    if($_POST[$subscript] == ""){
+        #error
+        $err = "記入漏れがあります";
+        $header = 'Location:'. "../view/image_addView.php?err=$err";
+        $break = 1;
+    }elseif($break == 0){
+        print$_POST[$subscript];
+        $header = 'Location:'.  " ./member_image_listController.php";
+    }
+}
+
 $user_id = $_SESSION["id"];
 $shop_name = $_POST["shop_name"];
 $category_name = $_POST["category"];
@@ -57,7 +80,7 @@ if(is_uploaded_file($_FILES["upload"]["tmp_name"])){
     #ファイル未選択
 }
 //print($_POST["size"]);
-header('Location:'. " ./member_image_listController.php");
+header($header);
 
 function category_search($category_name)
 {
