@@ -33,7 +33,7 @@ $bought_flag = buy_history_check($user_id , $id);
 
     <div class="content">
         <!-- ここにコンテンツを記述 -->
-        <form action="../controller/cartaddController.php" method="post">
+        <form class="cartForm" action="../controller/cartaddController.php" method="post">
             <div class="wrapper">
                 <div class="leftbox">
                     <div class="picture">
@@ -51,7 +51,7 @@ $bought_flag = buy_history_check($user_id , $id);
                         </div>
                         <div class="user">
                             <p>
-                                投稿者名
+                                投稿者名:
                                 <?php echo $user_name ?>
                             </p>
                         </div>

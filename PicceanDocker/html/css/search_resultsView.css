@@ -1,10 +1,7 @@
 @charset "UTF-8";
 
 h1 {
-	text-shadow: 1px 1px 0 #fff;
-	text-shadow: 1px -1px 0 #fff;
-	text-shadow: -1px 1px 0 #fff;
-	text-shadow: -1px -1px 0 #fff;
+	color: #fff;
 }
 
 ul {
@@ -15,6 +12,12 @@ ul {
 
 .content {
 	margin: 0 5%;
+}
+
+#imageMenuBox {
+	padding: 5px;
+	margin-bottom: 5px;
+	background: rgba(0, 0, 0, 0.4);
 }
 
 /* 画像詳細メニュー */
@@ -30,11 +33,16 @@ ul {
 	display: inline-block;
 	vertical-align: text-top;
 	margin: 0 10px;
-	text-shadow: 0 0 5px #fff;
+}
+.menuBox label {
+	color: #fff;
 }
 .menuItem {
 	margin-top: 0.5em;
 }
+.menuItem li {
+	color: #fff;
+} 
 .floatRight {
 	float: right;
 }
@@ -71,6 +79,7 @@ ul {
 }
 #pagiNationArea p span {
 	font-size: 0.8em;
+	font-weight: bold;
 	color: #fff;
 	text-shadow: 0 0 5px #000;
 }

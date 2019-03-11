@@ -1,80 +1,103 @@
+.cartForm {
+	height: 100%;
+}
 .wrapper{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0 ,0.4);
+    width: 100%;
+	min-height: 100vh;
+	height: 100%;
+	padding-top: 40px;
+	background-color: rgba(0, 0, 0 ,0.4);
 }
 .leftbox{
-    width: 50vw;
-    height: 100vh;
-    /*background-color: aqua;*/
+    width: 50%;
+    height: 100%;
     float: left;
 }
 .rightbox{
-    width: 50vw;
-    height:100vh;
-    /*background-color: red;*/
+    width: 50%;
+    height:100%;
     float: left;
 }
 .picture{
-    width: 32vw;
-    height: 24vw;
-    margin: auto;
-    margin-top: 8vh;
+    width: 60%;
+	margin: 0 auto;
+	margin-bottom: 20px;
     text-align: center;
-    /*background-color: blue;*/
 }
 .info_l{
-    width: 32vw;
-    height: 40vh;
-    margin:auto;
-    /*background-color: blueviolet;*/
-
-}
-.tag{
-    width: 32vw;
-    height: 5vh;
-    /*background-color: coral;*/
+    width: 60%;
+    margin: 0 auto;
 }
 .comment{
-    width: 32vw;
-    height: 16vh;
-    /*background-color :teal;*/
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #000 inset;
+	margin-bottom: 20px;
+}
+.comment:after {
+	position: absolute;
+	bottom: -8px;
+	left: 30px;
+	content: "";
+	width: 30px;
+	height: 30px;
+	border-right: solid 3px rgba(0, 0, 0, 0.05);
+	border-bottom: solid 3px rgba(0, 0, 0, 0.05);
+	background: #fff;
+	transform: rotate(45deg);
 }
 .user{
-    width: 32vw;
-    height: 10vh;
-    /*background-color: brown;*/
+	width: 100%;
+}
+.user p {
+	
+	color: #fff;
 }
 .info_r{
-    margin-top: 8vh;
-    width: 50vw;
-    height: 5vh;
+    width: 100%;
     /*background-color: darkblue;*/
 }
 .category{
-    width: 50vw;
-    height: 5vh;
+	width: 100%;
+	margin-bottom: 20px;
     /*background-color: teal;*/
 }
+.category p {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	background: #3879D9;
+	color: #fff;
+}
 .map{
-    margin:2vh 0;
-    width: 36vw;
-    height: 18vw;;
+	width: 100%;
+	margin-bottom: 20px;
     /*background-color: hotpink;*/
 }
 .buy{
-    /*background-color: rebeccapurple;*/
-    height: 10vh;
-    width: 50vw;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.buy p {
+	margin: 0;
+	padding: 0;
+	color: yellow;
+	text-decoration: underline;
+	font-size: 20px;
+	font-weight: bold;
 }
 .shop{
-    width: 50vw;
-    height: 5vh;
+    width: 100%;
     /*background-color: chartreuse*/
 }
 .exif{
-    width: 50vw;
-    height: 20vh;
+    width: 100%;
     /*background-color: gold;*/
 }
 .image_file{
@@ -82,8 +105,12 @@
     height: 24vw;
 }
 .title{
-    font-size: 24px;
-    font-weight: bold;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+    font-size: 30px;
+	font-weight: bold;
+	color: #fff;
 }
 .map_frame{
     width: 36vw;
