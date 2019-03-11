@@ -25,8 +25,8 @@
                     <input type="checkbox" id="label1" class="cssacc" />
                     <div class="accshow">
                         <!--ここに隠す中身-->
-                        <dt>ユーザのアカウント画像</dt>
-                        <dd class="menuItem"><a href="../controller/member_info_edit.php">会員情報ページ</a></dd>
+                        <!--<dt>ユーザのアカウント画像</dt> -->
+                        <!--<dd class="menuItem"><a href="../controller/member_info_edit.php">会員情報ページ</a></dd> -->
                         <dd class="menuItem"><a href="../view/image_addView.php">画像追加ページ</a></dd>
                         <dd class="menuItem"><a href="../controller/member_image_listController.php">アップロード画像一覧ページ</a></dd>
                         <dd class="menuItem"><a href="../controller/payment_image_listController.php">購入画像一覧ページ</a></dd>
