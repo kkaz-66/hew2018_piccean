@@ -19,8 +19,8 @@
 		</div>
 			
 		<!-- コンテンツここまで -->
-		</div>
-
+	</div>
+	
 	<!-- readFooter -->
 	<?php require_once($_SERVER['DOCUMENT_ROOT']."/view/footerView.php"); ?>
 </div>
