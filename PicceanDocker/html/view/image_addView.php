@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!isset($_SESSION["id"])){
+if (!isset($_SESSION["id"])) {
     header('Location: ../index.php');
     exit;
 }
@@ -71,8 +71,10 @@ if(!isset($_SESSION["id"])){
                     <div class="category_box">
                         <p class="item_name_txt">カテゴリ:</p>
                         <select name="category" id="0" class="input_box">
-                            <option value="category1">生物</option>>
-                            <option value="category1">人間</option>
+                            <option value="生物">生物</option>>
+                            <option value="地形">地形</option>
+                            <option value="構造物">構造物</option>
+                            <option value="人物">人物</option>
                         </select>
                     </div>
                     <div class="tag_box">

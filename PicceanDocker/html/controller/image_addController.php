@@ -4,7 +4,7 @@ require_once("../model/uploader.php");
 
 $user_id = $_SESSION["id"];
 $shop_name = $_POST["shop_name"];
-$category_name = $_POST["category_id"];
+$category_name = $_POST["category"];
 $image_size = "M";
 $image_title = $_POST["title"];
 $image_location = $_POST["location"];
@@ -17,10 +17,13 @@ $date_time = date("Y-m-d H:i:s");
 #print($date_time);
 #print("---/////---/-/-/-/");
 
+$category_id = category_search($category_name);
+
 $dict = array(
     'user_id' => $user_id,
     'shop_name' => $shop_name,
     'category_name' => $category_name,
+    'category_id' => $category_id,
     'image_size' => $image_size,
     'image_title' => $image_title,
     'image_location' => $image_location,
@@ -42,7 +45,6 @@ if(is_uploaded_file($_FILES["upload"]["tmp_name"])){
         $shop_id = shop_add($shop_name);
         $category_id = category_add($category_name);
         $dict['shop_id'] = $shop_id;
-        $dict['category_id'] = 1 ;
         $dict['image_file'] = "../images/" . $filename;
         $dict['image_thumbnail'] = "../images/" . $filename;
         $res = upload($dict);
@@ -55,4 +57,19 @@ if(is_uploaded_file($_FILES["upload"]["tmp_name"])){
     #ファイル未選択
 }
 header('Location:'. " ./member_image_listController.php");
+
+function category_search($category_name)
+{
+    switch ($category_name) {
+        case "生物":
+            return 1;
+        case "地形":
+            return 2;
+        case "構造物":
+            return 3;
+        case "人物":
+            return 4;
+    }
+}
+
 ?>
