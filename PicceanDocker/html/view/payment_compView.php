@@ -29,8 +29,8 @@ if($_SERVER['HTTP_REFERER'] == "http://localhost:8082/view/payment_confView.php"
     		<p class="p1">購入が完了しました</p>
 		</div>
 		<div class="ButtonBox">
-			<input type="button" onclick="location.href='../index.php'" value="トップに戻る">
-			<input type="button" onclick="location.href='../controller/payment_image_listController.php'" value="ダウンロード">
+			<input class="backButton" type="button" onclick="location.href='../index.php'" value="トップに戻る">
+			<input class="downloadButton" type="button" onclick="location.href='../controller/payment_image_listController.php'" value="ダウンロード">
 		</div>
 	<!-- コンテンツここまで -->
 	</div>

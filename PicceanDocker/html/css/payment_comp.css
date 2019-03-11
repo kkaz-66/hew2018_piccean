@@ -24,20 +24,36 @@ p{
   width: 536px;
   height: 64px;
   margin:40vh auto;
+  text-align: center;
   /*background-color: aqua;*/
 }
-.button{
-  width: 256px;
-  height: 64px;
-  border:solid 1px;
-  border-color: black;
-  background-color: darkgray;
-  text-align: center; 
-  float: left;
+.backButton {
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	background: #3879D9;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 5px;
+	transition: .2s ease-in-out;
+	float: left;
 }
-.br{
-  margin-left: 10px; 
+.backButton:hover {
+	cursor: pointer;
+	background: #2f8fcf;
 }
-.bl{
-  margin-right: 10px;
+.downloadButton {
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	background: #f16272;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 5px;
+	transition: .2s ease-in-out;
+	float: right;
+}
+.downloadButton:hover {
+	cursor: pointer;
+	background: #ee3e52;
 }

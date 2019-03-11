@@ -1,44 +1,102 @@
 .wrapper{
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.4)
-    /*background-color: aqua;*/
+	width: 100%;
+	min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .info{
     height: 16vh;
     width: 80vw;
-    /*background-color: indianred;*/
     margin: auto
 }
+#itemList {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	column-count: 5;
+	column-gap: 0;
+}
 .item{
-    height: 36vh;
-    width: 80vw;
-    /*background-color: brown;*/
-    margin:auto;
+	position: relative;
+	padding: 5px 5px 0;
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
 }
-.image{
-    height: 13.5vw;
-    width: 24vw;
-    /*background-color: blue;*/
-    float: left;
-}
-.image_info{
-    height: 28vh;
-    width: 56vw;
-    /*background-color: aquamarine;*/
-    float: left; 
-    margin-top: 3vh;
+.image_info{ 
+	position: absolute;
+	top: 5px;
+	box-sizing: border-box;
+	display: inline-block;
+	max-width: calc(100% - 10px);
 }
 .image_file{
-    width: 20vw;
-    height: 15vw;
+	width: 100%;
 }
-.txt{
-    width: 20vw;
-    height: 28vh;
-    float: left;
+.txt p {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	padding: 5px;
+	margin-bottom: 10px;
+	background: rgba(0, 0, 0, 0.4);
+	color: #fff;
+	width: calc(100% - 10px);
+}
+.del {
+	position: absolute;
+	width: calc(100% - 10px);
+	text-align: center;
+	bottom: 4px;
+	right: 5px;
+}
+.del input[type="submit"] {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 5px;
+	border: none;
+	outline: none;
+	color: #333;
+	font-weight: bold;
+}
+.del input[type="submit"]:hover {
+	cursor: pointer;
+	opacity: 0.8;
 }
 .buy{
     width: 10vw;
     height: 16vh;
     margin:auto;
+}
+.buy input[type="button"] {
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	background: #f16272;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 5px;
+	transition: .2s ease-in-out;
+}
+.buy input[type="button"]:hover {
+	cursor: pointer;
+	background: #ee3e52;
+}
+
+@media  screen and (max-width: 960px) {
+	#itemList {
+		column-count: 4;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	#itemList {
+		column-count: 3;
+	}
+}
+
+@media  screen and (max-width: 480px) {
+	#itemList {
+		column-count: 2;
+	}
 }
