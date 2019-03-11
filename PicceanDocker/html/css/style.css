@@ -34,7 +34,7 @@ body {
 
 .content {
 	height: 100vh;
-	/*max-height: 100%;*/
+	min-height: calc(100vh - 66.8px);
 	padding-top: 50px;
 	flex: 1;
 	background-repeat: no-repeat;
@@ -129,9 +129,8 @@ header {
 	text-decoration: none;
 	color: #fff;
 	border-radius: 3px;
-	transition: .4s;
 	background: #3879D9;
-	transition: .4s;
+	transition: .1s;
 	border: none;
 }
 #loginButton:hover,
@@ -139,6 +138,7 @@ header {
 #logoutButton:hover,
 #cartButton:hover {
 	cursor: pointer;
+	opacity: 0.75;
 }
 
 .searchBox {
@@ -154,7 +154,7 @@ header {
 	background: #fff;
 	border: none;
 	height: 2.0em;
-	padding-left: 1rem;
+	padding-left: 0.5rem;
 }
 .search_container input[type="text"]:focus {
   outline: 0;
@@ -168,6 +168,9 @@ header {
   border-radius: 3px;
   outline : none;
   height: 2.2em;
+}
+.search_container input[type="submit"]:hover{
+	opacity: 0.75;
 }
 .search_container ::-webkit-input-placeholder {
   color: #3879D9;
@@ -193,7 +196,7 @@ margin:0; padding:0;
     font-weight: bold;
     background :#a4cbf3;
     cursor :pointer;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 .menuItem a{
@@ -214,17 +217,17 @@ margin:0; padding:0;
     padding: 0;
     overflow: hidden;
     opacity: 0;
-    transition: 0.8s;
 }
 
 .accbox{
-
+	
 	width: 50px;
 	height: 50px;
 }
 
 .accshow{
 	width: 350px;
+	transition: 0.2s ease-in-out;
 }
 
 .cssacc:checked + .accshow {
