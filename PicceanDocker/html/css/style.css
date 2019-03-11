@@ -121,28 +121,6 @@ header {
 	width: 100%;
 }
 
-.logoImage {
-	min-width: 150px;
-	height: 46px;
-	/*background-image: url("../images/logo.jpg");*/
-	background-color: white;
-	background-size: cover;
-	border: solid 2px #67c5ff;
-}
-
-.logosrc {
-	text-align: center;
-	display: inline-block;
-	width: 150px;
-	height: 46px;
-	padding: 0.1em 0.3em;
-	transition: all .3s;
-}
-.logosrc:hover {
-	color: #fff;
-	background-color: #00BCD4;
-}
-
 #loginButton,#registButton,#logoutButton,#cartButton	{
 	display: inline-block;
 	padding: 0.3em 1em;
