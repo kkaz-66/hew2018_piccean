@@ -104,6 +104,6 @@ $bought_flag = buy_history_check($user_id , $id);
     </div>
 
     <!-- readFooter -->
-    <?php require_once($_SERVER['DOCUM E NT_ROOT']."/view/footerView.php"); ?>
+    <?php require_once($_SERVER['DOCUM E NT_ROOT']."../view/footerView.php"); ?>
 </body>
 </html>
