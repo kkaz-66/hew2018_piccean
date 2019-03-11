@@ -30,7 +30,7 @@ if($_SERVER['HTTP_REFERER'] == "http://localhost:8082/view/payment_confView.php"
 		</div>
 		<div class="ButtonBox">
 			<input type="button" onclick="location.href='../index.php'" value="トップに戻る">
-			<input type="button" onclick="location.href='../downloadView.php'" value="ダウンロード">
+			<input type="button" onclick="location.href='../controller/payment_image_listController.php'" value="ダウンロード">
 		</div>
 	<!-- コンテンツここまで -->
 	</div>
