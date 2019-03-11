@@ -80,7 +80,7 @@ $bought_flag = buy_history_check($user_id , $id);
 							echo "<p>購入済みです</p>";
 						}
 						elseif ($user_name != $user_id) {
-							$b = '<input type ="submit" class="submit_b"value="カートに入れ る">';
+							$b = '<input type ="submit" class="submit_b"value="カートに入れる">';
 							echo $b;
 						}
 						?>
@@ -94,7 +94,7 @@ $bought_flag = buy_history_check($user_id , $id);
                     <div class="exif">
                         <p>
                             使用機材:
-                            <?php echo $image["image_eq uipments"]?>
+                            <?php echo $image["image_equipments"]?>
                         </p>
                     </div>
                 </div>
