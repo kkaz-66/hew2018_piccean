@@ -31,9 +31,6 @@ $user_name = getUser($image["user_id"])
 				</div>
 				<div class="info_l">
 					<div class="tag">
-						<a href="" class="">タグ </a>
-						<a href="" class="">タグ </a>
-						<a href="" class="">タグ </a>
 					</div>
 					<div class="comment">
 						<p>
