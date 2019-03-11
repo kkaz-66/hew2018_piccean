@@ -103,13 +103,14 @@
 }
 
 .dlbutton{
-    margin:auto;
+    margin:1vh auto;
     text-align: center;
     width: 10vw;
     height: 5vh;
-    border-color: gray;
-    border: solid 2px;
-    background-color: aqua;
+    
+    /*border-color: gray;*/
+    /*border: solid 2px;
+    background-color: aqua;*/
 }
 
 .dltxt{

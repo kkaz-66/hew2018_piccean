@@ -96,7 +96,9 @@ if (!isset($_SESSION["id"])) {
             </div>
             <div class="rightBox">
                 <div class="size">
-                    <p>X枚の画像(一例)</p>
+                    <input type="radio" name="image_size" value="S"/>Sサイズ
+                    <input type="radio" name="image_size" value="M"/>Mサイズ
+                    <input type="radio" name="image_size" value="L"/>Lサイズ
                 </div>
                 <div class="dlbutton">
                     <input type="submit" value="アップロード">

@@ -5,7 +5,7 @@ require_once("../model/uploader.php");
 $user_id = $_SESSION["id"];
 $shop_name = $_POST["shop_name"];
 $category_name = $_POST["category"];
-$image_size = "M";
+$image_size = (string)$_POST["image_size"];
 $image_title = $_POST["title"];
 $image_location = $_POST["location"];
 $image_equipments = $_POST["equipments"];
@@ -56,6 +56,7 @@ if(is_uploaded_file($_FILES["upload"]["tmp_name"])){
     #print("未選択");
     #ファイル未選択
 }
+//print($_POST["size"]);
 header('Location:'. " ./member_image_listController.php");
 
 function category_search($category_name)
