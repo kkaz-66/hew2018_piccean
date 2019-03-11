@@ -37,12 +37,13 @@
     text-align: center;
 }
 .image{
-    border: solid 2px;
     margin: 1vh  auto 1vh auto;
     width: 18vw;
     height: 12vw;
-    border-color: gray;
-    background-color: coral;
+    }
+#img1{
+    width: 18vw;
+    height: 12vw;
 }
 .exif{
     width: 18vw;
