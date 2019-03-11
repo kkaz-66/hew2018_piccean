@@ -42,4 +42,17 @@ function read_id($login_id, $password){
 		return false;
 	}
 }
+
+function buy_history_check($user_id , $image_id){
+	$con = db_connect();
+	$sql = "SELECT image_id FROM T_SALE WHERE user_id = ? AND image_id = ?";
+	$stmt = mysqli_prepare($con , $sql);
+	mysqli_stmt_bind_param($stmt , "ss" , $user_id , $image_id);
+	mysqli_stmt_execute($stmt);
+	$result = mysqli_stmt_get_result($stmt);
+	$row = mysqli_fetch_array($result);
+	mysqli_stmt_close($stmt);
+	db_close($con);
+	return $row;
+}
 ?>

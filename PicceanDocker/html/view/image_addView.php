@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!isset($_SESSION["id"])){
+if (!isset($_SESSION["id"])) {
     header('Location: ../index.php');
     exit;
 }
@@ -71,8 +71,10 @@ if(!isset($_SESSION["id"])){
                     <div class="category_box">
                         <p class="item_name_txt">カテゴリ:</p>
                         <select name="category" id="0" class="input_box">
-                            <option value="category1">生物</option>>
-                            <option value="category1">人間</option>
+                            <option value="生物">生物</option>>
+                            <option value="地形">地形</option>
+                            <option value="構造物">構造物</option>
+                            <option value="人物">人物</option>
                         </select>
                     </div>
                     <div class="tag_box">
@@ -94,7 +96,9 @@ if(!isset($_SESSION["id"])){
             </div>
             <div class="rightBox">
                 <div class="size">
-                    <p>X枚の画像(一例)</p>
+                    <input type="radio" name="image_size" value="S" />Sサイズ
+                    <input type="radio" name="image_size" value="M" />Mサイズ
+                    <input type="radio" name="image_size" value="L" />Lサイズ
                 </div>
                 <div class="dlbutton">
                     <input type="submit" value="アップロード">
@@ -109,4 +113,11 @@ if(!isset($_SESSION["id"])){
     <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/view/footerView.php"); ?>
 </body>
 
-</html> 
+</html>
+<?php
+if (isset($_GET["err"])) {
+    $err = $_GET["err"];
+    $alert = "<script type='text/javascript'>alert('$err');</script>";
+    echo $alert;
+}
+?>
