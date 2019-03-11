@@ -70,7 +70,8 @@ header {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	background-color: rgba(0,0,0,0.1);
+	/* background-color: rgba(0,0,0,0.1); */
+	background: #333;
 }
 #headNavi {
 	min-width: 200px;
@@ -255,10 +256,10 @@ margin:0; padding:0;
 
 /* フッターコンテンツ */
 footer {
-	position: fixed;
-	bottom: 0; 
-	padding: 10px;
-	width: calc(100% - 20px);
+	/* position: fixed;
+	bottom: 0; */
+	width: 100%;
+	padding: 10px 0;
 	background-color: rgba(0,0,0,0.1);
 	text-align: center;
 }
@@ -281,9 +282,6 @@ footer {
 #footerNavi ul li a:hover {
 	text-decoration: underline;
 }
-/* p{
-	color: #ddd;
-} */
 /**********トップページ**********/
 #topWrapper {
 	height: 100%;
