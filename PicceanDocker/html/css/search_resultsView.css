@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+h1 {
+	text-shadow: 1px 1px 0 #fff;
+	text-shadow: 1px -1px 0 #fff;
+	text-shadow: -1px 1px 0 #fff;
+	text-shadow: -1px -1px 0 #fff;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -23,6 +30,7 @@ ul {
 	display: inline-block;
 	vertical-align: text-top;
 	margin: 0 10px;
+	text-shadow: 0 0 5px #fff;
 }
 .menuItem {
 	margin-top: 0.5em;
@@ -63,6 +71,8 @@ ul {
 }
 #pagiNationArea p span {
 	font-size: 0.8em;
+	color: #fff;
+	text-shadow: 0 0 5px #000;
 }
 #nextPage {
 	width: 60%;

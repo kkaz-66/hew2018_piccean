@@ -8,7 +8,6 @@
 	font-family: "游ゴシック","Yu Gothic","ヒラギノ角ゴ Pro W3",
 				 "Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"MS Pゴシック",sans-serif;
 	letter-spacing: 0.4px;
-	-webkit-appearance: none;
 }
 
 /* 全体設定 */
@@ -80,6 +79,45 @@ header {
 	line-height: 50px;
 	text-align: center;
 	border-bottom-left-radius: 10px;
+	z-index: 9999;
+}
+
+.titleBox {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+}
+/* .titleLogo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+} */
+.titleLogo a {
+	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 2em;
+	color: #3879D9;
+	text-shadow: 2px 2px 0px #e0ffff;
+	transition: .1s ease-in-out;
+}
+.titleLogo a:hover {
+	transform: rotate(5deg);
+}
+.titleLogo a:after {
+	background-color: #3879D9;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 2px;
+	left: 0;
+	position: absolute;
+	transition: .1s all;
+	width: 0;
+}
+.titleLogo a:hover:after {
+	width: 100%;
 }
 
 .logoImage {
@@ -113,6 +151,13 @@ header {
 	transition: .4s;
 	background: #3879D9;
 	transition: .4s;
+	border: none;
+}
+#loginButton:hover,
+#registButton:hover,
+#logoutButton:hover,
+#cartButton:hover {
+	cursor: pointer;
 }
 
 .searchBox {
@@ -139,6 +184,7 @@ header {
   border: none;
   background: #3879D9;
   color: #fff;
+  border-radius: 3px;
   outline : none;
   height: 2.2em;
 }
@@ -153,6 +199,9 @@ display:flex;
 width:100%;
 list-style-type:none;
 margin:0; padding:0;
+}
+.headerBox li {
+	margin: 0 5px;
 }
 
 .accbox label {
@@ -232,9 +281,9 @@ footer {
 #footerNavi ul li a:hover {
 	text-decoration: underline;
 }
-p{
+/* p{
 	color: #ddd;
-}
+} */
 /**********トップページ**********/
 #topWrapper {
 	height: 100%;
