@@ -3,7 +3,6 @@ session_start();
 require_once("../model/uploader.php");
 
 $subscripts =[
-    "id",
     "shop_name",
     "image_size",
     "title",
@@ -14,7 +13,7 @@ $subscripts =[
 $break = 0;
 $header;
 foreach($subscripts as $subscript){
-    if($_POST[$subscript] == ""){
+    if(!isset($_POST[$subscript])){
         #error
         $err = "記入漏れがあります";
         $header = 'Location:'. "../view/image_addView.php?err=$err";
